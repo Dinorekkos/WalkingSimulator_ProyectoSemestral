@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\_Dino\Code\code_interactables\code_colectables\colectables_txt\TextIterator.cs" />
+     <Compile Include="Assets\Packages\Mirror\MirrorReflectionScript.cs" />
      <Compile Include="Assets\_Dino\Code\code_interfaces\IUsable.cs" />
      <Compile Include="Assets\_Dino\Code\code_gamelogic\ButtonOut.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\code_colectables\Letter.cs" />
@@ -47,7 +48,7 @@
      <Compile Include="Assets\_Dino\Code\code_gamelogic\gamelogic_Scenes\SceneTrasition.cs" />
      <Compile Include="Assets\_Dino\Code\code_player\code_player_camera\PlayerCamera.cs" />
      <Compile Include="Assets\_Dino\Code\code_player\MainPlayer.cs" />
-     <Compile Include="Assets\Packages\Mirror\MirrorReflectionScript.cs" />
+     <Compile Include="Assets\_Dino\Code\code_data\BoolVariables.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

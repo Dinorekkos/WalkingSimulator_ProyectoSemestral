@@ -20,8 +20,7 @@ public class PlayerCamera : MonoBehaviour
     [Header("Player")]
     [SerializeField] private Transform player;
     [Header("Camera")]
-    [Range(0f,1f)]
-    [SerializeField] private float speedCamera = 1;
+    [SerializeField] FloatVariables speedCamera;
     [Header("Rycast")]
     [Range(0f,3f)]
     [SerializeField]float distanceHit = 1;
@@ -85,20 +84,20 @@ public class PlayerCamera : MonoBehaviour
     void CheckMouseInput()
     {
         Vector2 mouseMovement = mouse.delta.ReadValue();
-        rotationX = mouseMovement.x *speedCamera;
-        rotationLimit += mouseMovement.y * speedCamera;
+        rotationX = mouseMovement.x *speedCamera.value;
+        rotationLimit += mouseMovement.y * speedCamera.value;
         rotationLimit = Mathf.Clamp(rotationLimit,-80  ,80f);
     
         if (!invertedYAxis) 
-            myCamera.transform.localRotation = Quaternion.Euler(rotationLimit*-1,0,0);
+            myCamera.transform.localRotation = Quaternion.Euler(rotationLimit * -1,0,0);
     
        if(invertedYAxis)
-            myCamera.transform.localRotation = Quaternion.Euler(rotationLimit*1,0,0);
+            myCamera.transform.localRotation = Quaternion.Euler(rotationLimit * 1,0,0);
         
         if(!invertedXAxis)
             player.Rotate(Vector3.up * rotationX);
         if(invertedXAxis)
-            player.Rotate(Vector3.up * rotationX*-1);
+            player.Rotate(Vector3.up * rotationX * -1);
 
 
         if(mouse.leftButton.wasPressedThisFrame)
@@ -122,8 +121,6 @@ public class PlayerCamera : MonoBehaviour
             }
         }
     }
-
-
    private void BlockMouse()
     {
         Cursor.lockState = CursorLockMode.Locked;

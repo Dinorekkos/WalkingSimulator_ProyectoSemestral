@@ -2510,7 +2510,7 @@ Transform:
   - {fileID: 731788926}
   - {fileID: 1439075873}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &191191040
 Mesh:
@@ -11457,7 +11457,7 @@ RectTransform:
   - {fileID: 53630921}
   - {fileID: 971712167}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -42101,7 +42101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   state: 1
   player: {fileID: 1991952550}
-  speedCamera: 0.233
+  speedCamera: {fileID: 11400000, guid: 494e10cc245f0e94d9a16f09a6aa3faf, type: 2}
   distanceHit: 2.7
 --- !u!1 &2000724067
 GameObject:
