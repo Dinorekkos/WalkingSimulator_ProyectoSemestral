@@ -3,8 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+namespace cod.dino
+{
 public class PlayerCamera : MonoBehaviour
 {
+    public cameraState state;
+    public enum cameraState
+    {
+        Static, Moving
+    }
     Mouse mouse;
     Camera myCamera;
     float rotationLimit = 0f;
@@ -12,15 +19,10 @@ public class PlayerCamera : MonoBehaviour
 
     [Header("Player")]
     [SerializeField] private Transform player;
-
-    
-
     [Header("Camera")]
     [Range(0f,1f)]
     [SerializeField] private float speedCamera = 1;
-
     [Header("Rycast")]
-    
     [Range(0f,3f)]
     [SerializeField]float distanceHit = 1;
 
@@ -53,8 +55,19 @@ public class PlayerCamera : MonoBehaviour
     {
         if(active)
         {
-            GetViewInfo();
-            if(mouse!=null && myCamera != null) CheckMouseInput();
+            
+            if(mouse!=null && myCamera != null) 
+            {
+                if (state == cameraState.Moving)
+                {
+                    CheckMouseInput();
+                    BlockMouse();
+                }
+                else if(state == cameraState.Static)
+                {
+                    UnblockedMouse();
+                }
+            }
         }
     }
 
@@ -63,11 +76,10 @@ public class PlayerCamera : MonoBehaviour
         #if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_EDITOR || UNITY_STANDALONE_LINUX
 		    mouse = Mouse.current;
 		#endif
-        
         try{myCamera = Camera.main;}
         catch{myCamera = GetComponent<Camera>();}
 
-		active = true;
+		active = true;  
     }
 
     void CheckMouseInput()
@@ -89,6 +101,10 @@ public class PlayerCamera : MonoBehaviour
             player.Rotate(Vector3.up * rotationX*-1);
 
 
+        if(mouse.leftButton.wasPressedThisFrame)
+        {
+            GetViewInfo();
+        }
     }
 
     void GetViewInfo()
@@ -98,9 +114,28 @@ public class PlayerCamera : MonoBehaviour
         Ray myRay = myCamera.ScreenPointToRay(coordinate);
         if(Physics.Raycast (myRay, out hit, distanceHit))
         {
-            print (hit.transform.name + "" + hit.point);
+            //print (hit.transform.name + "" + hit.point);
+            IUsable usable = hit.transform.GetComponent<IUsable>();
+            if(usable !=null)
+            {
+                usable.UseClick();
+            }
         }
     }
 
 
+   private void BlockMouse()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    private void UnblockedMouse()
+    {
+         Cursor.lockState = CursorLockMode.None;
+         Cursor.visible = true;
+    }
+    
 }
+}
+

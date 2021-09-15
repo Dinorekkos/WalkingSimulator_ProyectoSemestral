@@ -1,0 +1,437 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'es' Physical Memory: 16332 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Documentos/Tareas/3 Semestre/ProyectoSmeestral/Unity/WalkingSimulator
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51478
+Successfully changed project path to: E:/Documentos/Tareas/3 Semestre/ProyectoSmeestral/Unity/WalkingSimulator
+E:/Documentos/Tareas/3 Semestre/ProyectoSmeestral/Unity/WalkingSimulator
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 40.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.8f1 (507919d4fff5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Documentos/Tareas/3 Semestre/ProyectoSmeestral/Unity/WalkingSimulator/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 580 Series (ID=0x67df)
+    Vendor:   
+    VRAM:     8171 MB
+    Driver:   27.20.22021.1002
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56664
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004082 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 41.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.934 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001074 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 41.82 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.296 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1797 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 86.6 MB.
+System memory in use after: 86.7 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2244.
+Total: 2.800900 ms (FindLiveObjects: 0.205500 ms CreateObjectMapping: 0.042500 ms MarkObjects: 2.234900 ms  DeleteObjects: 0.316400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Packages/Mirror
+  artifactKey: Guid(d42f5df383cf25f4d9ecf7b9dcb96dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Mirror using Guid(d42f5df383cf25f4d9ecf7b9dcb96dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2672c4e2a8ff5c55182bcc01efa350a1') in 0.041290 seconds
+  Import took 0.048542 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.211160 seconds.
+  path: Assets/Packages/MirrorReflectionScript.cs
+  artifactKey: Guid(169f3fbcd12dd2f43b61f490299b59d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/MirrorReflectionScript.cs using Guid(169f3fbcd12dd2f43b61f490299b59d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd1d83d0957d5b8309653af03f21758f') in 0.041194 seconds
+  Import took 0.070202 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001507 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.618 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.55 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1755 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.1 MB.
+System memory in use after: 83.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2247.
+Total: 2.447900 ms (FindLiveObjects: 0.204500 ms CreateObjectMapping: 0.042000 ms MarkObjects: 1.930700 ms  DeleteObjects: 0.269200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 305.971904 seconds.
+  path: Assets/Packages/Mirror/MirrorReflection.shader
+  artifactKey: Guid(34ef66c9bfb46e046bf3b36b5a6aa3de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Mirror/MirrorReflection.shader using Guid(34ef66c9bfb46e046bf3b36b5a6aa3de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bbd3253bc822a29ff572977f6ec3327') in 0.110598 seconds
+  Import took 0.137256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.033564 seconds.
+  path: Assets/Packages/Mirror/MirrorReflection.shader
+  artifactKey: Guid(34ef66c9bfb46e046bf3b36b5a6aa3de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Mirror/MirrorReflection.shader using Guid(34ef66c9bfb46e046bf3b36b5a6aa3de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bbd3253bc822a29ff572977f6ec3327') in 0.004202 seconds
+  Import took 0.008702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 226.197093 seconds.
+  path: Assets/_Dino/Animations/AnimatorController/PlayerAnimator.controller
+  artifactKey: Guid(d3753a51dcf301c49a7d899d2a176a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Animations/AnimatorController/PlayerAnimator.controller using Guid(d3753a51dcf301c49a7d899d2a176a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '665a90e1423df36302cf52a1fdb0b205') in 0.016282 seconds
+  Import took 0.032249 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.226612 seconds.
+  path: Assets/_Dino/Humanoid/loxpoly2.fbx
+  artifactKey: Guid(971aa50a795c7c34d88d794500eb7230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/loxpoly2.fbx using Guid(971aa50a795c7c34d88d794500eb7230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ee9c64c437e8fca820d29abf306cba7') in 0.407650 seconds
+  Import took 0.426357 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001226 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.193 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1755 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.1 MB.
+System memory in use after: 100.2 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2294.
+Total: 2.339200 ms (FindLiveObjects: 0.205500 ms CreateObjectMapping: 0.043200 ms MarkObjects: 1.832000 ms  DeleteObjects: 0.256900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.228021 seconds.
+  path: Assets/_Dino/Humanoid/Ch36_nonPBR@Brutal To Happy Walking.fbx
+  artifactKey: Guid(b25fbd8f231c76a45a932fbb30f59a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/Ch36_nonPBR@Brutal To Happy Walking.fbx using Guid(b25fbd8f231c76a45a932fbb30f59a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f744659cb6cb3712978496ae6cf854fa') in 0.131214 seconds
+  Import took 0.157677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 191.393533 seconds.
+  path: Assets/_Dino/Humanoid/humanoid_Animatios
+  artifactKey: Guid(33fd3c263f4f51f49a3cd8d486f3cbb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/humanoid_Animatios using Guid(33fd3c263f4f51f49a3cd8d486f3cbb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '419376de00dafd1b4511660c07a1fd61') in 0.011502 seconds
+  Import took 0.041058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.866418 seconds.
+  path: Assets/_Dino/Humanoid/LowPolyPlayer.fbx
+  artifactKey: Guid(971aa50a795c7c34d88d794500eb7230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/LowPolyPlayer.fbx using Guid(971aa50a795c7c34d88d794500eb7230) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2120b5ed1cf11092f2b7eea50c49dd38') in 0.064242 seconds
+  Import took 0.091235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.340283 seconds.
+  path: Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Idle.fbx
+  artifactKey: Guid(68c05a30ec6f0da41840dc7e4dad9980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Idle.fbx using Guid(68c05a30ec6f0da41840dc7e4dad9980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94d0129f250b99c2ecfa4bff6f9704c8') in 0.067950 seconds
+  Import took 0.085097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.629495 seconds.
+  path: Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Idle.fbx
+  artifactKey: Guid(68c05a30ec6f0da41840dc7e4dad9980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Idle.fbx using Guid(68c05a30ec6f0da41840dc7e4dad9980) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba6a96a8542e40de1179aedfde68d15') in 0.008982 seconds
+  Import took 0.016165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.109347 seconds.
+  path: Assets/_Dino/Animations/AnimatorController/PlayerAnimator.controller
+  artifactKey: Guid(d3753a51dcf301c49a7d899d2a176a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Animations/AnimatorController/PlayerAnimator.controller using Guid(d3753a51dcf301c49a7d899d2a176a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c3a5dc687696f21c5e75e40d0dfbe86') in 0.010049 seconds
+  Import took 0.022452 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001216 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.734 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1755 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.2 MB.
+System memory in use after: 100.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2298.
+Total: 3.976200 ms (FindLiveObjects: 0.208700 ms CreateObjectMapping: 0.042300 ms MarkObjects: 3.441600 ms  DeleteObjects: 0.281900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 237.020677 seconds.
+  path: Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx
+  artifactKey: Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx using Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63dbbf1a86b10caf1b43956ebf3ab4a6') in 0.075696 seconds
+  Import took 0.104179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.896333 seconds.
+  path: Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx
+  artifactKey: Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx using Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0f5bdb5862d18687870754b87288736') in 0.008763 seconds
+  Import took 0.017377 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.477051 seconds.
+  path: Assets/_Dino/Animations/AnimatorController/PlayerAnimator.controller
+  artifactKey: Guid(d3753a51dcf301c49a7d899d2a176a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Animations/AnimatorController/PlayerAnimator.controller using Guid(d3753a51dcf301c49a7d899d2a176a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0217deb96185ee6aa5a350a3b6c7fd9') in 0.008158 seconds
+  Import took 0.043738 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001996 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.263 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1755 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.2 MB.
+System memory in use after: 100.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2301.
+Total: 2.528200 ms (FindLiveObjects: 0.210500 ms CreateObjectMapping: 0.043400 ms MarkObjects: 1.997600 ms  DeleteObjects: 0.275100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 58.108555 seconds.
+  path: Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx
+  artifactKey: Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx using Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5538a5b12c0309cd16c136ee0d212e') in 0.032726 seconds
+  Import took 0.057174 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.599136 seconds.
+  path: Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx
+  artifactKey: Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx using Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5538a5b12c0309cd16c136ee0d212e') in 0.007986 seconds
+  Import took 0.011663 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001022 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.269 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1755 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.2 MB.
+System memory in use after: 100.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2304.
+Total: 3.457900 ms (FindLiveObjects: 0.226000 ms CreateObjectMapping: 0.201000 ms MarkObjects: 2.749700 ms  DeleteObjects: 0.279400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.259511 seconds.
+  path: Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx
+  artifactKey: Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx using Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41d0fe0535ccbad9360d9e19c31ba3d2') in 0.048267 seconds
+  Import took 0.052469 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001001 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.255 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1755 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.2 MB.
+System memory in use after: 100.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2307.
+Total: 4.100200 ms (FindLiveObjects: 0.237700 ms CreateObjectMapping: 0.074100 ms MarkObjects: 3.394300 ms  DeleteObjects: 0.392100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.591547 seconds.
+  path: Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx
+  artifactKey: Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx using Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cc79d100e601ddfdc0f13bb3a5b5225') in 0.053572 seconds
+  Import took 0.077903 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000989 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.236 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.90 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1755 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.3 MB.
+System memory in use after: 100.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2310.
+Total: 3.890500 ms (FindLiveObjects: 0.213700 ms CreateObjectMapping: 0.045300 ms MarkObjects: 3.199300 ms  DeleteObjects: 0.430500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.073823 seconds.
+  path: Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx
+  artifactKey: Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx using Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7c5a6abd97740ae3bb0a95b3d536946') in 0.053676 seconds
+  Import took 0.058850 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.849103 seconds.
+  path: Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx
+  artifactKey: Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx using Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de5201f4c65b44c6ee07d81fabf0142f') in 0.013121 seconds
+  Import took 0.020907 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001011 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.154 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1755 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.3 MB.
+System memory in use after: 100.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2313.
+Total: 3.356800 ms (FindLiveObjects: 0.504000 ms CreateObjectMapping: 0.057000 ms MarkObjects: 2.514900 ms  DeleteObjects: 0.279500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.222878 seconds.
+  path: Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx
+  artifactKey: Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Humanoid/humanoid_Animatios/Ch36_nonPBR@Standard Walk.fbx using Guid(96fb1d6d13a08f24cafe94e1e58fe180) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a7c30069732f0489da04750f92f03f7') in 0.034064 seconds
+  Import took 0.037660 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001295 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.092 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1755 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 100.3 MB.
+System memory in use after: 100.3 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2316.
+Total: 2.438000 ms (FindLiveObjects: 0.206700 ms CreateObjectMapping: 0.042900 ms MarkObjects: 1.904400 ms  DeleteObjects: 0.282600 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
