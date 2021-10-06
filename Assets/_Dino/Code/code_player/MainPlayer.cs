@@ -15,9 +15,9 @@ namespace cod.dino
         {
             WallNotes,
             NoInteracting,
-            Memories
+            Memories,
+            OnPause
         }
-
         public playerInteractions stateInteractions;
 
         private PlayerCamera playercamera;
@@ -29,14 +29,11 @@ namespace cod.dino
         [Header("Wall Notes")]
         [SerializeField] private GameObject[] notesGO;
         private LeanDragTranslate lean;
-        
-
         private Mouse mouse;
         private void Start()
         {
             Prepare();
         }
-
         private void Update()
         {
             if (stateInteractions == playerInteractions.WallNotes)
@@ -50,13 +47,15 @@ namespace cod.dino
                 movement.state = PlayerMovement.playerState.Moving;
                 pointer.gameObject.SetActive(true);
             }
-
             if (stateInteractions == playerInteractions.Memories)
             {
                 PlayerIsInteractingWithText();
             }
+            if (stateInteractions == playerInteractions.OnPause)
+            {
+                MakePlayerStatic();
+            }
         }
-
         void Prepare()
         {
             #if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_EDITOR || UNITY_STANDALONE_LINUX
@@ -72,9 +71,7 @@ namespace cod.dino
             {
                 notesGO[i].GetComponent<LeanDragTranslate>().enabled = true;
             }
-            playercamera.state = PlayerCamera.cameraState.Static;
-            movement.state = PlayerMovement.playerState.Static;
-            
+            MakePlayerStatic();
             if (mouse.rightButton.wasPressedThisFrame)
             {
                // print("Salir de wallnote");
@@ -84,19 +81,23 @@ namespace cod.dino
                 }
                 stateInteractions = playerInteractions.NoInteracting;
             }
-
         }
-        
         public void PlayerIsInteractingWithText()
+        {
+            MakePlayerStatic();
+        }
+        private void MakePlayerStatic()
         {
             playercamera.state = PlayerCamera.cameraState.Static;
             movement.state = PlayerMovement.playerState.Static;
-            //pointer.gameObject.SetActive(false);
         }
-
-
-
-
-
+        public void OnPause()
+        {
+            stateInteractions = playerInteractions.OnPause;
+        }
+        public void NoPause()
+        {
+            stateInteractions = playerInteractions.NoInteracting;
+        }
     }
 }

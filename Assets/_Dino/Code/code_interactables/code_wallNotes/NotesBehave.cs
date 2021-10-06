@@ -24,6 +24,9 @@ public class NotesBehave : MonoBehaviour
     }
     [Header("ID")]
     [SerializeField] public string noteID = "";
+
+    [Header("Memorie")] 
+    [SerializeField] private Letter memorie;
     
     Vector3 placedPos;
     private Camera cam;
@@ -45,6 +48,7 @@ public class NotesBehave : MonoBehaviour
 
         inicialPos = transform.position;
         state = NoteState.Idle;
+       // this.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -121,21 +125,16 @@ public class NotesBehave : MonoBehaviour
             IsinPlaced = false;
             noteTarget.HasNote = false;
             noteTarget.IsValid = false;
-
         }
     }
-
     void CheckID()
     {
         if (noteTarget.TargetId == noteID)
         {
-            noteTarget.IsValid = true;
-           // print("green note" + this.name);
-        }
+            noteTarget.IsValid = true;}
         else if(noteTarget.TargetId != noteID)
         {
             noteTarget.IsValid = false;
-            //print("red note" +  this.name);
         }
     }
 }

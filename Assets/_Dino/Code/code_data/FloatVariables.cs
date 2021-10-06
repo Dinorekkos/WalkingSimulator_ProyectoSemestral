@@ -11,5 +11,6 @@ public class FloatVariables : ScriptableObject
     public void SetValue(float _value)
     {
         value = _value;
+        SetDirty();
     }
 }

@@ -52,6 +52,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Dino\Code\code_gamelogic\gamelogic_CountMemories.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\code_colectables\colectables_txt\TextIterator.cs" />
      <Compile Include="Assets\Packages\Mirror\MirrorReflectionScript.cs" />
      <Compile Include="Assets\Packages\DragAndDrop\DragDrop\Scripts\DragDrop.cs" />
@@ -62,12 +63,14 @@
      <Compile Include="Assets\_Dino\Code\code_data\FloatVariables.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\code_wallNotes\WallNotes.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\ButtonDoor.cs" />
+     <Compile Include="Assets\_Dino\Code\code_gamelogic\PauseController.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\code_wallNotes\NoteTarget.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\code_colectables\NoteColectable.cs" />
      <Compile Include="Assets\_Dino\Code\code_player\code_player_movement\Player_AnimationController.cs" />
      <Compile Include="Assets\_Dino\Code\code_player\code_player_movement\PlayerMovement.cs" />
      <Compile Include="Assets\_Dino\Code\code_gamelogic\gamelogic_Scenes\SceneTrasition.cs" />
      <Compile Include="Assets\_Dino\Code\code_player\code_player_camera\PlayerCamera.cs" />
+     <Compile Include="Assets\_Dino\Code\code_interactables\code_colectables\MyLetters.cs" />
      <Compile Include="Assets\_Dino\Code\code_data\BoolVariables.cs" />
      <Compile Include="Assets\_Dino\Code\code_player\MainPlayer.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\code_wallNotes\WallCheckIds.cs" />

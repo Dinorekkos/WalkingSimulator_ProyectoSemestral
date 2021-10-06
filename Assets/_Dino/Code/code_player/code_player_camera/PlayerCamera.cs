@@ -23,7 +23,7 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] FloatVariables speedCamera;
     [SerializeField] BoolVariables invertedYBool;
     [SerializeField] private BoolVariables invertedXBool;
-    [Header("Rycast")]
+    [Header("Raycast")]
     [Range(0f,3f)]
     [SerializeField]float distanceHit = 1;
 
@@ -35,17 +35,7 @@ public class PlayerCamera : MonoBehaviour
         get{return active;}
         set{ active = value;}
     }
-    public bool InvertedYAxis
-    {
-        get{return invertedYAxis;}
-        set{invertedYAxis = value;}
-    }
-    public bool InvertedXAxis
-    {
-        get{return invertedXAxis;}
-        set{invertedXAxis = value;}
-    }
-
+    
     void Start()
     {
         Prepare();
@@ -89,12 +79,12 @@ public class PlayerCamera : MonoBehaviour
         rotationLimit += mouseMovement.y * speedCamera.value;
         rotationLimit = Mathf.Clamp(rotationLimit,-80  ,80f);
 
-        //Check de value on the scriptableObject in Y bool 
+        //Check the value on the scriptableObject in Y bool 
         if(invertedYBool != null)
         {
             invertedYAxis = invertedYBool.value;
         }
-        //Check de value on the scriptableObject in X bool 
+        //Check the value on the scriptableObject in X bool 
         if (invertedXBool != null)
         {
             invertedXAxis = invertedXBool.value;

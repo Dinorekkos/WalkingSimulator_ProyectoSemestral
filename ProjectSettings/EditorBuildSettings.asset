@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/_Dino/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/_Dino/Scenes/Menu.unity
     guid: 7bd8bfe19e6a71b48a27e1f83eb5ac1e
@@ -17,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Dino/Scenes/Options.unity
     guid: faa7490b87764af4d8502e88daa46dca
+  - enabled: 1
+    path: Assets/_Dino/Scenes/HumanoidTest.unity
+    guid: 7b42f889f53457f438dd06453badec93
   m_configObjects: {}

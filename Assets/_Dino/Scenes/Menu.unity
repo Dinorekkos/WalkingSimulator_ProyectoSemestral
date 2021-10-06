@@ -700,7 +700,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1131275169}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1131275171}
+        m_TargetAssemblyTypeName: SceneTrasition, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1131275169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -751,7 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b14baa4bf9e654c8455249e5dad2e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 
+  sceneToLoad: HumanoidTest
 --- !u!1 &1410917726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +1109,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1763514606}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1763514608}
+        m_TargetAssemblyTypeName: SceneTrasition, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1763514606
 MonoBehaviour:
   m_ObjectHideFlags: 0

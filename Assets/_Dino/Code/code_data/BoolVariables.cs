@@ -11,5 +11,6 @@ public class BoolVariables : ScriptableObject
     public void SetValueBool(bool _value)
     {
         value = _value;
+        SetDirty();
     }
 }
