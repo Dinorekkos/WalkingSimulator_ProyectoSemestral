@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: SpeedMouse
   m_EditorClassIdentifier: 
   developerDescription: Speed of player camera
-  value: 1
+  value: 0.33

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,15 +6,11 @@ using cod.dino;
 
 public class ButtonOut : MonoBehaviour
 {
-    [SerializeField] PlayerCamera camera;
-    [SerializeField] PlayerMovement movement;
-
+    [SerializeField] private MainPlayer mainPlayer;
     public void UnlockInputs()
     {
-        
-        camera.state = PlayerCamera.cameraState.Moving;
-        movement.state = PlayerMovement.playerState.Moving;
+        mainPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<MainPlayer>();
+        mainPlayer.stateInteractions = MainPlayer.playerInteractions.NoInteracting;
     }
-
-
+    
 }

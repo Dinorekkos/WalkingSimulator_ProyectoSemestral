@@ -9,18 +9,15 @@ public class ButtonDoor : MonoBehaviour, IUsable
     {
         get{return canInteract;}
         set {canInteract = value;}
-
     }   
     bool canInteract;
+    
     public void UseClick()
     {
-        if(OnUse !=null) 
+        if(OnUse !=null)
         {
             OnUse.Invoke();
-            
         }
-        
-
     }
 
     

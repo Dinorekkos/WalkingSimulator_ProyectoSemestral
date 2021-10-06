@@ -19,7 +19,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 1
+    optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -529,13 +529,13 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: loxpoly2(Clone)
+    - name: LowPolyPlayer(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Armature
-      parentName: loxpoly2(Clone)
+      parentName: LowPolyPlayer(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000081460335, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -930,7 +930,7 @@ ModelImporter:
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Ch36
-      parentName: loxpoly2(Clone)
+      parentName: LowPolyPlayer(Clone)
       position: {x: -0.0000000040605665, y: 7.450603e-11, z: -0.0000000014342367}
       rotation: {x: 0.000000081198415, y: 3.6378678e-12, z: -9.313228e-10, w: 1}
       scale: {x: 1, y: 1, z: 1}

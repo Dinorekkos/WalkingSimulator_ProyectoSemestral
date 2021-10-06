@@ -10,6 +10,7 @@ public class SceneTrasition : MonoBehaviour
     }
     public void Quit()
     {
-        Application.Quit();
+        Application.Quit(); 
+        
     }
 }

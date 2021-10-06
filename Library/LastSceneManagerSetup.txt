@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Dino/Scenes/SampleScene.unity
+- path: Assets/_Dino/Scenes/HumanoidTest.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

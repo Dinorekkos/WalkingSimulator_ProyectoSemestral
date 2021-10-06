@@ -21,6 +21,8 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] private Transform player;
     [Header("Camera")]
     [SerializeField] FloatVariables speedCamera;
+    [SerializeField] BoolVariables invertedYBool;
+    [SerializeField] private BoolVariables invertedXBool;
     [Header("Rycast")]
     [Range(0f,3f)]
     [SerializeField]float distanceHit = 1;
@@ -41,7 +43,7 @@ public class PlayerCamera : MonoBehaviour
     public bool InvertedXAxis
     {
         get{return invertedXAxis;}
-        set{invertedYAxis = value;}
+        set{invertedXAxis = value;}
     }
 
     void Start()
@@ -52,9 +54,8 @@ public class PlayerCamera : MonoBehaviour
     
     void Update()
     {
-        if(active)
+        if(Active)
         {
-            
             if(mouse!=null && myCamera != null) 
             {
                 if (state == cameraState.Moving)
@@ -78,7 +79,7 @@ public class PlayerCamera : MonoBehaviour
         try{myCamera = Camera.main;}
         catch{myCamera = GetComponent<Camera>();}
 
-		active = true;  
+		Active = true;  
     }
 
     void CheckMouseInput()
@@ -87,23 +88,36 @@ public class PlayerCamera : MonoBehaviour
         rotationX = mouseMovement.x *speedCamera.value;
         rotationLimit += mouseMovement.y * speedCamera.value;
         rotationLimit = Mathf.Clamp(rotationLimit,-80  ,80f);
-    
-        if (!invertedYAxis) 
-            myCamera.transform.localRotation = Quaternion.Euler(rotationLimit * -1,0,0);
-    
-       if(invertedYAxis)
+
+        //Check de value on the scriptableObject in Y bool 
+        if(invertedYBool != null)
+        {
+            invertedYAxis = invertedYBool.value;
+        }
+        //Check de value on the scriptableObject in X bool 
+        if (invertedXBool != null)
+        {
+            invertedXAxis = invertedXBool.value;
+        }
+        // Y camera no inverted
+        if (!invertedYAxis)
+            myCamera.transform.localRotation = Quaternion.Euler(rotationLimit * -1, 0, 0);
+        // Y camera inverted
+        if(invertedYAxis)
             myCamera.transform.localRotation = Quaternion.Euler(rotationLimit * 1,0,0);
-        
+        //X camera no inverted
         if(!invertedXAxis)
             player.Rotate(Vector3.up * rotationX);
+        //X camera inverted
         if(invertedXAxis)
             player.Rotate(Vector3.up * rotationX * -1);
 
-
+        //Check Click to interact
         if(mouse.leftButton.wasPressedThisFrame)
         {
             GetViewInfo();
         }
+        
     }
 
     void GetViewInfo()
@@ -113,12 +127,18 @@ public class PlayerCamera : MonoBehaviour
         Ray myRay = myCamera.ScreenPointToRay(coordinate);
         if(Physics.Raycast (myRay, out hit, distanceHit))
         {
-            //print (hit.transform.name + "" + hit.point);
             IUsable usable = hit.transform.GetComponent<IUsable>();
             if(usable !=null)
             {
                 usable.UseClick();
             }
+
+            WallNotes wallNotes = hit.transform.GetComponent<WallNotes>();
+            if (wallNotes != null)
+            {
+                wallNotes.enabled = true;
+            }
+
         }
     }
    private void BlockMouse()

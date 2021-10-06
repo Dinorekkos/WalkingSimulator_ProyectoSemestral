@@ -1,18 +1,102 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using cod.dino;
+using Lean.Touch;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
-public class MainPlayer : MonoBehaviour
+namespace cod.dino
 {
-    // Start is called before the first frame update
-    void Start()
+    public class MainPlayer : MonoBehaviour
     {
-        
-    }
+        public enum playerInteractions
+        {
+            WallNotes,
+            NoInteracting,
+            Memories
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
+        public playerInteractions stateInteractions;
+
+        private PlayerCamera playercamera;
+        private PlayerMovement movement;
+
+        [Header("UI Pointer")] [SerializeField]
+        private Image pointer;
+
+        [Header("Wall Notes")]
+        [SerializeField] private GameObject[] notesGO;
+        private LeanDragTranslate lean;
         
+
+        private Mouse mouse;
+        private void Start()
+        {
+            Prepare();
+        }
+
+        private void Update()
+        {
+            if (stateInteractions == playerInteractions.WallNotes)
+            {
+                PlayerIsInteractingWithWall();
+            }
+
+            if (stateInteractions == playerInteractions.NoInteracting)
+            {
+                playercamera.state = PlayerCamera.cameraState.Moving;
+                movement.state = PlayerMovement.playerState.Moving;
+                pointer.gameObject.SetActive(true);
+            }
+
+            if (stateInteractions == playerInteractions.Memories)
+            {
+                PlayerIsInteractingWithText();
+            }
+        }
+
+        void Prepare()
+        {
+            #if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_EDITOR || UNITY_STANDALONE_LINUX
+            mouse = Mouse.current;
+            #endif
+            playercamera = GetComponent<PlayerCamera>();
+            movement = GetComponent<PlayerMovement>();
+            stateInteractions = playerInteractions.NoInteracting;
+        }
+        public void PlayerIsInteractingWithWall()
+        {
+            for (int i = 0; i > notesGO.Length; i++)
+            {
+                notesGO[i].GetComponent<LeanDragTranslate>().enabled = true;
+            }
+            playercamera.state = PlayerCamera.cameraState.Static;
+            movement.state = PlayerMovement.playerState.Static;
+            
+            if (mouse.rightButton.wasPressedThisFrame)
+            {
+               // print("Salir de wallnote");
+                for (int i = 0; i > notesGO.Length; i++)
+                {
+                    notesGO[i].GetComponent<LeanDragTranslate>().enabled = false;
+                }
+                stateInteractions = playerInteractions.NoInteracting;
+            }
+
+        }
+        
+        public void PlayerIsInteractingWithText()
+        {
+            playercamera.state = PlayerCamera.cameraState.Static;
+            movement.state = PlayerMovement.playerState.Static;
+            //pointer.gameObject.SetActive(false);
+        }
+
+
+
+
+
     }
 }

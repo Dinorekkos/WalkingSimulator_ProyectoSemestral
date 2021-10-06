@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
-
 namespace cod.dino
 {  
     [RequireComponent(typeof(CharacterController))]
     public class PlayerMovement : MonoBehaviour
     {
-
+        private MainPlayer mainPlayer;
         public playerState state;
         public enum playerState
         {
@@ -42,6 +40,8 @@ namespace cod.dino
         private float verticalSpeed;
         public float movementSpeed = 1.0f;
         public float gravity = 9.8f;
+
+        Player_AnimationController animationController;
     
 
         void Prepare()
@@ -52,6 +52,8 @@ namespace cod.dino
             gamePad = Gamepad.current;
             characterController = GetComponent<CharacterController>();
             active = true;
+            animationController = GetComponent<Player_AnimationController>();
+            mainPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<MainPlayer>();
         }
 
         public void Start()
@@ -62,20 +64,20 @@ namespace cod.dino
         {
             if (active)
             {
-                if(keyBoard != null)
-                {
-                    if(state == playerState.Moving)
+                    if (keyBoard != null)
                     {
-                        CheckInputKeyBoard();
+                        if (state == playerState.Moving)
+                        {
+                            CheckInputKeyBoard();
+                        } 
+                        else if(state == playerState.Static)
+                        {
+                            animationController.IdleAnim();
+                        }
                     }
-                    else
-                    if(state == playerState.Static)
-                    {
-
-                    }
-                    
-                }
+                   
             }
+            
         }
 
 
@@ -88,22 +90,40 @@ namespace cod.dino
             CamR.y = 0;
             CamF = CamF.normalized;
             CamR = CamR.normalized;
-            if (keyBoard.wKey.isPressed)
+            
+            if(keyBoard.anyKey.isPressed)
             {
-                movementDirection +=CamF;
+                
+                if (keyBoard.wKey.isPressed)
+                {
+                    movementDirection +=CamF;
+                    animationController.FrontWalking();
+                }
+            
+                if (keyBoard.sKey.isPressed)
+                {
+                    movementDirection -= CamF; 
+                    animationController.BackwardWalking();    
+                }
+                
+                if (keyBoard.aKey.isPressed)
+                {
+                    movementDirection -= CamR;
+                    animationController.LeftWalking();
+                }
+                
+                if (keyBoard.dKey.isPressed)
+                {
+                    movementDirection += CamR;
+                    animationController.RightWalking();
+                }
             }
-            if (keyBoard.sKey.isPressed)
+            else
             {
-                movementDirection -= CamF;
+                animationController.IdleAnim();
             }
-            if (keyBoard.aKey.isPressed)
-            {
-                movementDirection -= CamR;
-            }
-            if (keyBoard.dKey.isPressed)
-            {
-                movementDirection += CamR;
-            }
+
+            
         
                 Gravity();
                 movementDirection.Normalize();
