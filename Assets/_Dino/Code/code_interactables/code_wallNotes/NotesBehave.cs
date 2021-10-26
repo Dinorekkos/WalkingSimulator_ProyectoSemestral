@@ -27,32 +27,41 @@ public class NotesBehave : MonoBehaviour
 
     [Header("Memorie")] 
     [SerializeField] private Letter memorie;
+
+    [Header("Wall")] 
+    [SerializeField] private WallNotes wallScript;
     
     Vector3 placedPos;
     private Camera cam;
     private RaycastHit hit;
     private Ray ray;
-    Mouse mouse;
+    private Mouse mouse;
     private LeanDragTranslate lean;
     private Vector3 inicialPos; 
     private NoteTarget noteTarget;
-    
+    private AudioManagerPuzzle audioManagerPuzzle;
+    private MeshRenderer mesh;
     private void Start()
     {
         #if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_EDITOR || UNITY_STANDALONE_LINUX
         mouse = Mouse.current;
         #endif
-        
+        mesh = this.GetComponent<MeshRenderer>();
         lean = gameObject.GetComponent<LeanDragTranslate>();
         cam = lean.Camera;
 
         inicialPos = transform.position;
         state = NoteState.Idle;
-       // this.gameObject.SetActive(false);
+        mesh.enabled = false;
+        audioManagerPuzzle = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManagerPuzzle>();
     }
 
     private void Update()
     {
+        if (memorie.ReadLetter)
+        {
+            mesh.enabled = true;
+        }
         if (main.stateInteractions == MainPlayer.playerInteractions.WallNotes)
         {
             if (state == NoteState.Idle)
@@ -77,7 +86,9 @@ public class NotesBehave : MonoBehaviour
                     }
                     if (hit.transform.GetComponent<LeanDragTranslate>())
                     {
-                       // print(hit.transform.name + "da con comp leandrag");
+                        
+                        audioManagerPuzzle.Play("1-AmbientRoom1");
+                        
                         state = NoteState.Dragging;
                         lean = hit.transform.GetComponent<LeanDragTranslate>();
                         lean.CanDrag = true;
@@ -90,11 +101,12 @@ public class NotesBehave : MonoBehaviour
                     }
                 }
             }
-            else if(!mouse.leftButton.IsPressed())
+            else if (!mouse.leftButton.IsPressed())
             {
-                if(!IsinPlaced)
-                state = NoteState.Idle;
-                
+                if (!IsinPlaced)
+                {
+                    state = NoteState.Idle;
+                }
                 if (lean)
                 {
                     lean.CanDrag = false;
@@ -116,7 +128,6 @@ public class NotesBehave : MonoBehaviour
             lean.CanDrag = false;
         }
     }
-
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("CubeTarget"))
@@ -131,10 +142,17 @@ public class NotesBehave : MonoBehaviour
     {
         if (noteTarget.TargetId == noteID)
         {
-            noteTarget.IsValid = true;}
+            noteTarget.IsValid = true;
+        }
         else if(noteTarget.TargetId != noteID)
         {
             noteTarget.IsValid = false;
         }
+        else if (noteTarget.TargetId == null)
+        {
+            noteTarget.IsValid = false;
+            
+        }
+        
     }
 }

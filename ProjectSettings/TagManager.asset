@@ -6,6 +6,7 @@ TagManager:
   tags:
   - CubeTarget
   - Gamelogic
+  - AudioManager
   layers:
   - Default
   - TransparentFX

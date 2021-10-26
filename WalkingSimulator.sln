@@ -5,11 +5,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeanCommon", "LeanCommon.cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeanTouchPlus", "LeanTouchPlus.csproj", "{8d16fc6d-3987-9d30-197b-25e074c0a320}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{fb663995-7ed2-6f19-fc4d-361f6daac8d2}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeanCommonPlus", "LeanCommonPlus.csproj", "{720dc70b-6876-8086-a4db-2eec24e7cc3b}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeanTouch", "LeanTouch.csproj", "{b01776cd-2be9-6b48-e6b7-b7c9789c8322}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{fb663995-7ed2-6f19-fc4d-361f6daac8d2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +25,10 @@ Global
 		{8d16fc6d-3987-9d30-197b-25e074c0a320}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8d16fc6d-3987-9d30-197b-25e074c0a320}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8d16fc6d-3987-9d30-197b-25e074c0a320}.Release|Any CPU.Build.0 = Release|Any CPU
+		{fb663995-7ed2-6f19-fc4d-361f6daac8d2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{fb663995-7ed2-6f19-fc4d-361f6daac8d2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{fb663995-7ed2-6f19-fc4d-361f6daac8d2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{fb663995-7ed2-6f19-fc4d-361f6daac8d2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{720dc70b-6876-8086-a4db-2eec24e7cc3b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{720dc70b-6876-8086-a4db-2eec24e7cc3b}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{720dc70b-6876-8086-a4db-2eec24e7cc3b}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,10 +37,6 @@ Global
 		{b01776cd-2be9-6b48-e6b7-b7c9789c8322}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{b01776cd-2be9-6b48-e6b7-b7c9789c8322}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{b01776cd-2be9-6b48-e6b7-b7c9789c8322}.Release|Any CPU.Build.0 = Release|Any CPU
-		{fb663995-7ed2-6f19-fc4d-361f6daac8d2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{fb663995-7ed2-6f19-fc4d-361f6daac8d2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{fb663995-7ed2-6f19-fc4d-361f6daac8d2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{fb663995-7ed2-6f19-fc4d-361f6daac8d2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

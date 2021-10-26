@@ -6,7 +6,7 @@ using UnityEngine;
 public class NoteTarget : MonoBehaviour
 {
     [SerializeField] private string targetID = "";
-    private bool isValid;
+    [SerializeField] private bool isValid;
     private bool hasNote;
 
     public string TargetId

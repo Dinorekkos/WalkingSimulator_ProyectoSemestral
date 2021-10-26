@@ -74,6 +74,7 @@ namespace cod.dino
                         {
                             animationController.IdleAnim();
                         }
+                        //Quiero hacer un commit
                     }
                    
             }

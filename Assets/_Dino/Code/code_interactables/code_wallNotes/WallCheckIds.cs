@@ -7,9 +7,15 @@ using UnityEngine.InputSystem;
 
 public class WallCheckIds : MonoBehaviour
 {
+   [Header("Notes")]
    [SerializeField] private Camera camera;
    [SerializeField] private NoteTarget[] targetsNotes;
    [SerializeField] private GameObject[] gameojects;
+
+   [Header("Audio")]
+   [SerializeField] private AudioManagerPuzzle audioManagerPuzzle;
+
+   [SerializeField] private string[] soundsArray;
    
    private Mouse mouse;
    private RaycastHit hit;
@@ -19,22 +25,26 @@ public class WallCheckIds : MonoBehaviour
    {
       bool allValid = true;
       
+      //Checa si hay notas validas
       for (int i = 0; i < targetsNotes.Length; i++)
       {
          if (targetsNotes[i].IsValid == false)
          {
             allValid = false;
-            //print("No se puede abrir puerta");
+            
          }
       }
 
+      //Si todas las notas son validas se puede abrir la puerta
       if (allValid)
       {
-        // print("Se puede abrir la puerta");
          for (int i = 0; i < gameojects.Length ; i++)
          {
             gameojects[i].SetActive(false);
          }
+         
+         audioManagerPuzzle.PlayArray(soundsArray);
+         
       }
    }
 
@@ -62,5 +72,6 @@ public class WallCheckIds : MonoBehaviour
       #if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_EDITOR || UNITY_STANDALONE_LINUX
       mouse = Mouse.current;
       #endif
+      audioManagerPuzzle = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManagerPuzzle>();
    }
 }

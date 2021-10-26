@@ -31,14 +31,15 @@ public class Letter : MonoBehaviour,IUsable
         set {canInteract = value;}
     }   
     bool canInteract;
+
     public void UseClick()
     {
         mainPlayer.stateInteractions = MainPlayer.playerInteractions.Memories;
-        AddMemorietoCount();
         if(OnUse !=null) 
         {
             OnUse.Invoke();
         }
+        MemoryTook();
         
     }
     private void Start()
@@ -48,10 +49,9 @@ public class Letter : MonoBehaviour,IUsable
         ReadLetter = false;
     }
 
-    public void AddMemorietoCount()
+    public void MemoryTook()
     {
         ReadLetter= true;
-        
         
     }
 }
