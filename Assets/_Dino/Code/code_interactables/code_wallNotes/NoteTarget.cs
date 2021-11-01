@@ -1,13 +1,16 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class NoteTarget : MonoBehaviour
 {
+    [SerializeField] private GameObject particle;
+    [SerializeField] private NotesBehave noteAttached;
     [SerializeField] private string targetID = "";
     [SerializeField] private bool isValid;
+
     private bool hasNote;
+    private MeshRenderer mesh;
+    private Collider collider;
 
     public string TargetId
     {
@@ -29,5 +32,21 @@ public class NoteTarget : MonoBehaviour
     private void Start()
     {
         IsValid = false;
+        mesh = this.GetComponent<MeshRenderer>();
+        collider = this.GetComponent<Collider>();
+        mesh.enabled = false;
+        collider.enabled = false;
+        particle.SetActive(false);
+
+    }
+
+    private void Update()
+    {
+        if (noteAttached.CanInteract)
+        {
+            mesh.enabled = true;
+            collider.enabled = true;
+            particle.SetActive(true);
+        }
     }
 }

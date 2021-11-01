@@ -1,12 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Looping3DSound : MonoBehaviour
 {
-
-	[SerializeField] private bool canPlayAudio;
+	
+	[SerializeField] private Letter memorie;
+	
 	public float delay = 2;
 
 	public bool CanPlayAudio
@@ -14,7 +16,7 @@ public class Looping3DSound : MonoBehaviour
 		get { return canPlayAudio; }
 		set { canPlayAudio = value; }
 	}
-	
+	bool canPlayAudio;
 	AudioSource Source;
 	AudioClip Clip;
 	float cliplength;
@@ -27,15 +29,29 @@ public class Looping3DSound : MonoBehaviour
 		Clip = Source.clip;
 		cliplength = Clip.length;
 	}
+
+	private void Start()
+	{
+		CanPlayAudio = true;
+	}
+
 	void Update()
 	{
 		if (CanPlayAudio)
 		{
-			elapsedTime += Time.deltaTime;
-			if(elapsedTime >= cliplength + delay)
+			if (!memorie.ReadLetter)
 			{
-				elapsedTime = 0;
-				Source.Play();
+				elapsedTime += Time.deltaTime;
+
+				if (elapsedTime >= cliplength + delay)
+				{
+					elapsedTime = 0;
+					Source.Play();
+				}
+			}
+			else
+			{
+				CanPlayAudio = false;
 			}
 		}
 		

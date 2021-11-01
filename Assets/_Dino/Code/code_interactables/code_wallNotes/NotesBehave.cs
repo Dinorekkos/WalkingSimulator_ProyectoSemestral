@@ -22,14 +22,27 @@ public class NotesBehave : MonoBehaviour
         get { return isInPlaced;}
         set { isInPlaced = value; }
     }
+
+    [Header("Visuals")] 
+    [SerializeField] private GameObject particle;
     [Header("ID")]
     [SerializeField] public string noteID = "";
 
-    [Header("Memorie")] 
+    [Header("Colectables")] 
     [SerializeField] private Letter memorie;
+    [SerializeField] private Letter thought;
+    
+    [Header("AudioManager")]
+    [SerializeField] private AudioManagerPuzzle audioManagerPuzzle;
 
-    [Header("Wall")] 
-    [SerializeField] private WallNotes wallScript;
+    [SerializeField] private string clipName;
+    
+    private bool canInteract;
+
+    public bool CanInteract
+    {
+        get { return canInteract; }
+    }
     
     Vector3 placedPos;
     private Camera cam;
@@ -39,7 +52,8 @@ public class NotesBehave : MonoBehaviour
     private LeanDragTranslate lean;
     private Vector3 inicialPos; 
     private NoteTarget noteTarget;
-    private AudioManagerPuzzle audioManagerPuzzle;
+    private Collider collider;
+    
     private MeshRenderer mesh;
     private void Start()
     {
@@ -47,20 +61,27 @@ public class NotesBehave : MonoBehaviour
         mouse = Mouse.current;
         #endif
         mesh = this.GetComponent<MeshRenderer>();
+        collider = this.GetComponent<Collider>();
         lean = gameObject.GetComponent<LeanDragTranslate>();
         cam = lean.Camera;
 
+        particle.SetActive(false);
+        canInteract = false;
         inicialPos = transform.position;
         state = NoteState.Idle;
         mesh.enabled = false;
+        collider.enabled = false;
         audioManagerPuzzle = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManagerPuzzle>();
     }
 
     private void Update()
     {
-        if (memorie.ReadLetter)
+        if (memorie.ReadLetter && thought.ReadLetter)
         {
             mesh.enabled = true;
+            collider.enabled = true;
+            canInteract = true;
+            particle.SetActive(true);
         }
         if (main.stateInteractions == MainPlayer.playerInteractions.WallNotes)
         {
@@ -79,6 +100,7 @@ public class NotesBehave : MonoBehaviour
                 {
                     if (hit.transform.GetComponent<NoteTarget>())
                     {
+                        audioManagerPuzzle.Play(clipName);
                         if (this.IsinPlaced && noteTarget.HasNote)
                         {
                             IsinPlaced= false;
@@ -87,8 +109,7 @@ public class NotesBehave : MonoBehaviour
                     if (hit.transform.GetComponent<LeanDragTranslate>())
                     {
                         
-                        audioManagerPuzzle.Play("1-AmbientRoom1");
-                        
+                        audioManagerPuzzle.Play(clipName);
                         state = NoteState.Dragging;
                         lean = hit.transform.GetComponent<LeanDragTranslate>();
                         lean.CanDrag = true;

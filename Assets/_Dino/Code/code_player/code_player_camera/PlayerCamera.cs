@@ -117,6 +117,7 @@ public class PlayerCamera : MonoBehaviour
         Ray myRay = myCamera.ScreenPointToRay(coordinate);
         if(Physics.Raycast (myRay, out hit, distanceHit))
         {
+           
             IUsable usable = hit.transform.GetComponent<IUsable>();
             if(usable !=null)
             {

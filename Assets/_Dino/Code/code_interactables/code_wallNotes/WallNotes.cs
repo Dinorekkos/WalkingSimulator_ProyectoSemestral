@@ -21,8 +21,7 @@ public class WallNotes : MonoBehaviour, IUsable
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Transform placetomove;
 
-    [Header("Memories")] 
-    [SerializeField] private int memoriesOfWall;
+    
     
     
     public UnityEvent OnUse;

@@ -1,0 +1,1124 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.8f1 (507919d4fff5) revision 5273881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1288; Version 2009; 64bit' Language: 'es' Physical Memory: 16332 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Documentos/Tareas/3 Semestre/ProyectoSmeestral/Unity/WalkingSimulator
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61525
+Successfully changed project path to: E:/Documentos/Tareas/3 Semestre/ProyectoSmeestral/Unity/WalkingSimulator
+E:/Documentos/Tareas/3 Semestre/ProyectoSmeestral/Unity/WalkingSimulator
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 68.35 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.8f1 (507919d4fff5)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Documentos/Tareas/3 Semestre/ProyectoSmeestral/Unity/WalkingSimulator/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 580 Series (ID=0x67df)
+    Vendor:   
+    VRAM:     8171 MB
+    Driver:   30.0.13025.1000
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56808
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004275 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 67.36 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.133 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001376 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 66.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.375 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.68 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1987 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 167.0 MB.
+System memory in use after: 167.0 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2444.
+Total: 2.848900 ms (FindLiveObjects: 0.234700 ms CreateObjectMapping: 0.046800 ms MarkObjects: 2.128600 ms  DeleteObjects: 0.437700 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/_Dino/Audio/SFX
+  artifactKey: Guid(12081c092c903dd438369db6c82279af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Audio/SFX using Guid(12081c092c903dd438369db6c82279af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c2346433a585d15d29ce79536b78e8') in 0.011459 seconds
+  Import took 0.014723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.682055 seconds.
+  path: Assets/_Dino/Audio/SFX/lockDoor.wav
+  artifactKey: Guid(7fb6e6a2cba307b489ad882c0379af75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Audio/SFX/lockDoor.wav using Guid(7fb6e6a2cba307b489ad882c0379af75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ce6c2e747369899cf1ad1709f760aef') in 0.171429 seconds
+  Import took 0.175265 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001406 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.191 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 165.9 MB.
+System memory in use after: 165.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2456.
+Total: 2.732500 ms (FindLiveObjects: 0.233500 ms CreateObjectMapping: 0.052700 ms MarkObjects: 2.084600 ms  DeleteObjects: 0.360200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001215 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.403 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.71 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 165.9 MB.
+System memory in use after: 166.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2459.
+Total: 2.908000 ms (FindLiveObjects: 0.229000 ms CreateObjectMapping: 0.054800 ms MarkObjects: 2.249300 ms  DeleteObjects: 0.373400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001362 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.214 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 166.0 MB.
+System memory in use after: 166.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2462.
+Total: 2.865900 ms (FindLiveObjects: 0.225800 ms CreateObjectMapping: 0.055500 ms MarkObjects: 2.204900 ms  DeleteObjects: 0.378100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001197 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.183 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 166.0 MB.
+System memory in use after: 166.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2465.
+Total: 2.455400 ms (FindLiveObjects: 0.228200 ms CreateObjectMapping: 0.048600 ms MarkObjects: 1.857100 ms  DeleteObjects: 0.320500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 551.688737 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Loot/Items/Runes/ItemRune02.prefab
+  artifactKey: Guid(e2adf4fc776b6484eb85e7f174ac483d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Loot/Items/Runes/ItemRune02.prefab using Guid(e2adf4fc776b6484eb85e7f174ac483d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c55465297c3ff78ad42a4bde3d5a7a8') in 0.098929 seconds
+  Import took 0.104147 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 77.279548 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Interactive/Icons/2D White
+  artifactKey: Guid(99069b2333d14454893d557ec69aa4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Interactive/Icons/2D White using Guid(99069b2333d14454893d557ec69aa4b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdb4484b331e6869b8a80e4f8eb6e3bd') in 0.013704 seconds
+  Import took 0.017868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.236298 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Interactive/Actions/TeleportChannel.prefab
+  artifactKey: Guid(3e74236a910ef8647931a141f153ecaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Interactive/Actions/TeleportChannel.prefab using Guid(3e74236a910ef8647931a141f153ecaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7dcb41d6647a6fe1ac298264facb5a4') in 0.017005 seconds
+  Import took 0.021458 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010434 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Interactive/Actions/TeleportChannel.prefab
+  artifactKey: Guid(3e74236a910ef8647931a141f153ecaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Interactive/Actions/TeleportChannel.prefab using Guid(3e74236a910ef8647931a141f153ecaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7dcb41d6647a6fe1ac298264facb5a4') in 0.009085 seconds
+  Import took 0.013959 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001322 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.436 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 166.0 MB.
+System memory in use after: 166.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2468.
+Total: 2.845600 ms (FindLiveObjects: 0.242800 ms CreateObjectMapping: 0.055700 ms MarkObjects: 2.151100 ms  DeleteObjects: 0.394400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 80.554883 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Environment/Fire
+  artifactKey: Guid(63c653996ee5b3b4fb6d5dc96f8d6f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Environment/Fire using Guid(63c653996ee5b3b4fb6d5dc96f8d6f06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb0978fc9341b5ba0374f0e7a5725b49') in 0.014263 seconds
+  Import took 0.018648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.946056 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Environment/Fire/Torch
+  artifactKey: Guid(f02ed80b89a33c448861bab95c023593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Environment/Fire/Torch using Guid(f02ed80b89a33c448861bab95c023593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85c7f73f4c3bace8510b11c753676220') in 0.011261 seconds
+  Import took 0.015432 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001438 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.258 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 166.0 MB.
+System memory in use after: 166.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2471.
+Total: 3.138500 ms (FindLiveObjects: 0.214700 ms CreateObjectMapping: 0.047000 ms MarkObjects: 2.394500 ms  DeleteObjects: 0.480800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 405.448615 seconds.
+  path: Assets/Packages/Lean/Touch
+  artifactKey: Guid(fa389a3f9b662a541bcf774f99b89553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Lean/Touch using Guid(fa389a3f9b662a541bcf774f99b89553) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74c7adbca227f8f7f97a7ee8f5b810a9') in 0.018269 seconds
+  Import took 0.027411 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.501560 seconds.
+  path: Assets/Packages/PolygonPrototype/Scenes
+  artifactKey: Guid(b062322faa4a9d94592dff73f39ddc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/PolygonPrototype/Scenes using Guid(b062322faa4a9d94592dff73f39ddc30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aeae7ddb7f0a440160135c90da91e56') in 0.036129 seconds
+  Import took 0.040567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.855375 seconds.
+  path: Assets/Packages/Studio Nik/Low Poly Guitars/Assets/Materials
+  artifactKey: Guid(b04744d9701866b45aaa6dfd5d04a876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Studio Nik/Low Poly Guitars/Assets/Materials using Guid(b04744d9701866b45aaa6dfd5d04a876) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15961951a2ffd01a459b547290d08fba') in 0.012446 seconds
+  Import took 0.016279 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.904913 seconds.
+  path: Assets/Packages/Studio Nik/Low Poly Guitars/Assets/Prefabs/ElectricGuitar.prefab
+  artifactKey: Guid(a4073fe1b57c21040b49feae5219aa3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Studio Nik/Low Poly Guitars/Assets/Prefabs/ElectricGuitar.prefab using Guid(a4073fe1b57c21040b49feae5219aa3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7314751c406a7bde71346ae247f32f0d') in 0.132784 seconds
+  Import took 0.137723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.568055 seconds.
+  path: Assets/Packages/Studio Nik/Low Poly Guitars/Assets/Prefabs/GuitarStand.prefab
+  artifactKey: Guid(4a02423eb8b813743a69f41b13813be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Studio Nik/Low Poly Guitars/Assets/Prefabs/GuitarStand.prefab using Guid(4a02423eb8b813743a69f41b13813be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85024a32a7f2cbed5b698eefb70fc3c5') in 0.025330 seconds
+  Import took 0.029481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.201279 seconds.
+  path: Assets/Packages/Studio Nik/Low Poly Guitars/Assets/Prefabs/Stand+AcousticGuitar.prefab
+  artifactKey: Guid(b10fed84dcd24c34ea1d8d9f6368ddde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/Studio Nik/Low Poly Guitars/Assets/Prefabs/Stand+AcousticGuitar.prefab using Guid(b10fed84dcd24c34ea1d8d9f6368ddde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52d81e7aeb84822ba617b63319797c98') in 0.025836 seconds
+  Import took 0.030418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1487.005552 seconds.
+  path: Assets/Packages/ARPG Effects/Materials/Misc/shield.mat
+  artifactKey: Guid(b0cbc994c19e7a044996d84b219bc432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Materials/Misc/shield.mat using Guid(b0cbc994c19e7a044996d84b219bc432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1571e933a4738851d678ff53737a37a0') in 0.068680 seconds
+  Import took 0.073587 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 173.151553 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Loot/Orbs/DarkOrb.prefab
+  artifactKey: Guid(fbeb4d755ac5acb4ba5f3cfe5ea79b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Loot/Orbs/DarkOrb.prefab using Guid(fbeb4d755ac5acb4ba5f3cfe5ea79b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2929a419e2672fa3150352eb92ef402b') in 0.018334 seconds
+  Import took 0.022997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016795 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Loot/Orbs/DarkOrb.prefab
+  artifactKey: Guid(fbeb4d755ac5acb4ba5f3cfe5ea79b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Loot/Orbs/DarkOrb.prefab using Guid(fbeb4d755ac5acb4ba5f3cfe5ea79b6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2929a419e2672fa3150352eb92ef402b') in 0.007388 seconds
+  Import took 0.012051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 108.699437 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Interactive/Actions/TeleportFinish.prefab
+  artifactKey: Guid(6fed2eb6a9e2f5e4892b57ce34fbee4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Interactive/Actions/TeleportFinish.prefab using Guid(6fed2eb6a9e2f5e4892b57ce34fbee4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b4f9bc6cab09ecd6223af62b118e3c') in 0.014797 seconds
+  Import took 0.019462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006383 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Interactive/Actions/TeleportFinish.prefab
+  artifactKey: Guid(6fed2eb6a9e2f5e4892b57ce34fbee4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Interactive/Actions/TeleportFinish.prefab using Guid(6fed2eb6a9e2f5e4892b57ce34fbee4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30b4f9bc6cab09ecd6223af62b118e3c') in 0.010415 seconds
+  Import took 0.015171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.940884 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Interactive/Zones/Zone 1
+  artifactKey: Guid(9743c023409102340a6fbf15dfbc286b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Interactive/Zones/Zone 1 using Guid(9743c023409102340a6fbf15dfbc286b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '689c945557a51d73ace7aa37274e9141') in 0.010903 seconds
+  Import took 0.014656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.767805 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Interactive/Zones/Zone 1/QuestZoneBlue.prefab
+  artifactKey: Guid(3ea3fa94385a98949939b9b5c11d76f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Interactive/Zones/Zone 1/QuestZoneBlue.prefab using Guid(3ea3fa94385a98949939b9b5c11d76f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d39b39b8a37cd800754b51a8d7d3d4') in 0.013692 seconds
+  Import took 0.017731 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010922 seconds.
+  path: Assets/Packages/ARPG Effects/Prefabs/Interactive/Zones/Zone 1/QuestZoneBlue.prefab
+  artifactKey: Guid(3ea3fa94385a98949939b9b5c11d76f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Prefabs/Interactive/Zones/Zone 1/QuestZoneBlue.prefab using Guid(3ea3fa94385a98949939b9b5c11d76f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d39b39b8a37cd800754b51a8d7d3d4') in 0.007465 seconds
+  Import took 0.011492 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014894 seconds.
+  path: Assets/Packages/ARPG Effects/Materials/Quest Markers/questmarker_blue.mat
+  artifactKey: Guid(df6818808c9929b4586d59df893750e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Materials/Quest Markers/questmarker_blue.mat using Guid(df6818808c9929b4586d59df893750e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5c44e8edaa1f9a2ab39bf349ec9d20') in 0.019957 seconds
+  Import took 0.023687 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.790452 seconds.
+  path: Assets/Packages/ARPG Effects/Materials/Quest Markers/questmarker_white.mat
+  artifactKey: Guid(25db10c51213cf94583a0fa81bf221ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Materials/Quest Markers/questmarker_white.mat using Guid(25db10c51213cf94583a0fa81bf221ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2429165a32fad37433d0e6033ad21230') in 0.020703 seconds
+  Import took 0.025548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 97.346734 seconds.
+  path: Assets/Packages/ARPG Effects/Materials/Quest Markers/questmarker2.mat
+  artifactKey: Guid(bbfc649b42bf3574da59eacf89d70002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Materials/Quest Markers/questmarker2.mat using Guid(bbfc649b42bf3574da59eacf89d70002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40feb7e98b51ead31c86cec61b89e646') in 0.018638 seconds
+  Import took 0.022440 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001335 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.202 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 166.3 MB.
+System memory in use after: 166.4 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 2509.
+Total: 2.881000 ms (FindLiveObjects: 0.230500 ms CreateObjectMapping: 0.046700 ms MarkObjects: 2.264500 ms  DeleteObjects: 0.337800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001231 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.614 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.64 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 166.3 MB.
+System memory in use after: 166.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2512.
+Total: 2.725600 ms (FindLiveObjects: 0.238700 ms CreateObjectMapping: 0.048400 ms MarkObjects: 2.108200 ms  DeleteObjects: 0.328700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001180 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.225 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 166.3 MB.
+System memory in use after: 166.4 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2515.
+Total: 2.483800 ms (FindLiveObjects: 0.220400 ms CreateObjectMapping: 0.046500 ms MarkObjects: 1.889000 ms  DeleteObjects: 0.326800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 395.395316 seconds.
+  path: Assets/Packages/PolygonPrototype/Prefabs/Character_FPS_Hands
+  artifactKey: Guid(034d04b052bc734498ca37abc3800f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/PolygonPrototype/Prefabs/Character_FPS_Hands using Guid(034d04b052bc734498ca37abc3800f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a4d5f0f5b786fa4d27ed2ec101233eb') in 0.014978 seconds
+  Import took 0.019654 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.587929 seconds.
+  path: Assets/Packages/PolygonPrototype/Prefabs/Character_FPS_Hands/Standard
+  artifactKey: Guid(e2055a3f1c17c584285a8a6e7043ac0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/PolygonPrototype/Prefabs/Character_FPS_Hands/Standard using Guid(e2055a3f1c17c584285a8a6e7043ac0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3038916e216e2af5b8f94b87e2eca931') in 0.010745 seconds
+  Import took 0.014485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.443983 seconds.
+  path: Assets/Packages/PolygonPrototype/Prefabs/Character_FPS_Hands/Standard/Character_FPS_Arms_Standard_02.prefab
+  artifactKey: Guid(dbf18624c8b697a48bf91f3016035764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/PolygonPrototype/Prefabs/Character_FPS_Hands/Standard/Character_FPS_Arms_Standard_02.prefab using Guid(dbf18624c8b697a48bf91f3016035764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c478f45d6eaedcaf91e728f9df3cf3e5') in 0.182819 seconds
+  Import took 0.187130 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001650 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.350 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.61 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 179.9 MB.
+System memory in use after: 180.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2520.
+Total: 3.279800 ms (FindLiveObjects: 0.262300 ms CreateObjectMapping: 0.055900 ms MarkObjects: 2.497500 ms  DeleteObjects: 0.462400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001645 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.196 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.81 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.0 MB.
+System memory in use after: 180.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2523.
+Total: 3.223000 ms (FindLiveObjects: 0.250500 ms CreateObjectMapping: 0.065700 ms MarkObjects: 2.460000 ms  DeleteObjects: 0.444700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1975.846460 seconds.
+  path: Assets/_Dino/Scenes/Scene2 - copia.unity
+  artifactKey: Guid(fd546336fbef2504f9758ce05c54ab38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene2 - copia.unity using Guid(fd546336fbef2504f9758ce05c54ab38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7199bd5a70ea42394bb1f36e83a8a8aa') in 0.026597 seconds
+  Import took 0.030809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.494549 seconds.
+  path: Assets/_Dino/Scenes/Scene2.unity
+  artifactKey: Guid(fd546336fbef2504f9758ce05c54ab38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene2.unity using Guid(fd546336fbef2504f9758ce05c54ab38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f769c39a36fbc31cd3d1b615f6913c71') in 0.009837 seconds
+  Import took 0.013674 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001407 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.225 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.60 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1938 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.0 MB.
+System memory in use after: 180.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2526.
+Total: 2.899000 ms (FindLiveObjects: 0.231400 ms CreateObjectMapping: 0.055800 ms MarkObjects: 2.217700 ms  DeleteObjects: 0.392700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2249.527131 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/arrow.png
+  artifactKey: Guid(e4c5864729a5c9743974aa2cb1655ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/arrow.png using Guid(e4c5864729a5c9743974aa2cb1655ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8c771687a70f06166f60a69008eb7a') in 0.119329 seconds
+  Import took 0.123780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/cloud_n.png
+  artifactKey: Guid(f1582e6b79940ff45b522bb36a8a9b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/cloud_n.png using Guid(f1582e6b79940ff45b522bb36a8a9b5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22f340d1a8a40c029af07c7f0fe02fd') in 0.025985 seconds
+  Import took 0.029632 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/beam_modular.png
+  artifactKey: Guid(0d24000dce9317e48a064d92f06d71a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/beam_modular.png using Guid(0d24000dce9317e48a064d92f06d71a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd28cdbdf151c107b4ff90d203c41ffe7') in 0.016045 seconds
+  Import took 0.019781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/beam_essence.png
+  artifactKey: Guid(81d526920d873cc48a22e11f3413390f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/beam_essence.png using Guid(81d526920d873cc48a22e11f3413390f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfbe99dbcc77582dd46d7266a7509897') in 0.030672 seconds
+  Import took 0.034009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/brick_normal.png
+  artifactKey: Guid(ef153dd0f012fce4ab6614d3bc68f1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/brick_normal.png using Guid(ef153dd0f012fce4ab6614d3bc68f1b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68c1f50d843abad40348019aa896d734') in 0.025315 seconds
+  Import took 0.028590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/icon_reward.png
+  artifactKey: Guid(45eb68eedee98df4a987caccd6374b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/icon_reward.png using Guid(45eb68eedee98df4a987caccd6374b99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '964c041f32a0e1c91ed0f5d2edaf37e3') in 0.016606 seconds
+  Import took 0.020227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/icon_w_question.png
+  artifactKey: Guid(2d052ab349561d94ca45687843fb2f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/icon_w_question.png using Guid(2d052ab349561d94ca45687843fb2f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a4ab9a98bb8249b7a578da2a5a76243') in 0.017840 seconds
+  Import took 0.021615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-1_comp_dir.png
+  artifactKey: Guid(e21d98e5294f0df4f97ea63fcd7d6181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-1_comp_dir.png using Guid(e21d98e5294f0df4f97ea63fcd7d6181) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5400fc17fd138bcf4375ddd1c0661f') in 0.026390 seconds
+  Import took 0.031600 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-7_comp_dir.png
+  artifactKey: Guid(0753e888a6f83fe46800b58395936496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-7_comp_dir.png using Guid(0753e888a6f83fe46800b58395936496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32945716565f90b01100cbaabf3f68ce') in 0.017415 seconds
+  Import took 0.020695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-6_comp_dir.png
+  artifactKey: Guid(316fb7a4f53aa7e4d828561241854fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-6_comp_dir.png using Guid(316fb7a4f53aa7e4d828561241854fbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a0dcc7a2316be93ecf42244379f1857') in 0.023271 seconds
+  Import took 0.026732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-4_comp_light.exr
+  artifactKey: Guid(50b620ca66912e146947e53ce51f8600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-4_comp_light.exr using Guid(50b620ca66912e146947e53ce51f8600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c26dd5f6e32cca659e23134b896fb0b') in 0.093606 seconds
+  Import took 0.096740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-2_comp_dir.png
+  artifactKey: Guid(6a13bbab2cd14f14095b908504d434f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-2_comp_dir.png using Guid(6a13bbab2cd14f14095b908504d434f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a439f786a16a3509ee76769597f81e53') in 0.014793 seconds
+  Import took 0.018190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/icon_quest.png
+  artifactKey: Guid(8c91a2965e8e6ae4398d983242e69b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/icon_quest.png using Guid(8c91a2965e8e6ae4398d983242e69b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9348acf3f6bb5b5ee76363f64bfd8d12') in 0.017313 seconds
+  Import took 0.020619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/iconglow.png
+  artifactKey: Guid(c037fd2378f1c4d4da44b86d14d3a422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/iconglow.png using Guid(c037fd2378f1c4d4da44b86d14d3a422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78a40514428044895b8cfa07115d95df') in 0.016972 seconds
+  Import took 0.020502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-0_comp_light.exr
+  artifactKey: Guid(1c3680866e67b314394030dcbf3788a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-0_comp_light.exr using Guid(1c3680866e67b314394030dcbf3788a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b141a79e8d92899112fd2a3ac8f46c') in 0.014603 seconds
+  Import took 0.017804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/droplet_trn.png
+  artifactKey: Guid(c71f61a621067194e83c9d39e7638ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/droplet_trn.png using Guid(c71f61a621067194e83c9d39e7638ba4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b21b231875c34e3b9e5279fba76ecfc') in 0.014377 seconds
+  Import took 0.017566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-5_comp_light.exr
+  artifactKey: Guid(cdff1299b51070c458bbca77006f0891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-5_comp_light.exr using Guid(cdff1299b51070c458bbca77006f0891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93faceffede3c8f9ef4cb04ea8161355') in 0.017337 seconds
+  Import took 0.020976 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-8_comp_dir.png
+  artifactKey: Guid(3a87b3b137abe914a84d77ba5a4d3f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-8_comp_dir.png using Guid(3a87b3b137abe914a84d77ba5a4d3f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3779ec3e621fd59930b843b79ed8a1a') in 0.031821 seconds
+  Import took 0.035036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/beam_modular2.png
+  artifactKey: Guid(d9f0212e62b01ab419f9dedb76d332f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/beam_modular2.png using Guid(d9f0212e62b01ab419f9dedb76d332f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8f88208acfc0d35c311e2e7ffb6384') in 0.012850 seconds
+  Import took 0.016274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/leaf_birch.png
+  artifactKey: Guid(74f30a40c05d73642b0f53180c42826c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/leaf_birch.png using Guid(74f30a40c05d73642b0f53180c42826c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14c75754e4ef82d0277875c5cc3e5b11') in 0.015807 seconds
+  Import took 0.019550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/leaf_birch_2.png
+  artifactKey: Guid(5fe45677c01014d4b8964a0c07219f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/leaf_birch_2.png using Guid(5fe45677c01014d4b8964a0c07219f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60864a3cf95b85dee7f44d30872d2e7b') in 0.012762 seconds
+  Import took 0.015887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/leaf_birch_n.png
+  artifactKey: Guid(d002a0d38cc5f1841b79ef53f521ca82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/leaf_birch_n.png using Guid(d002a0d38cc5f1841b79ef53f521ca82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4902d29b76efeeb89490b1b9fc5d813b') in 0.014636 seconds
+  Import took 0.017852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/icon_w_exclamation.png
+  artifactKey: Guid(6dc22c7feb729ce479f2a61e8d0b2d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/icon_w_exclamation.png using Guid(6dc22c7feb729ce479f2a61e8d0b2d07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c88c97dbc9d777f466c049cf3346c84b') in 0.016960 seconds
+  Import took 0.020260 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/arrow.png
+  artifactKey: Guid(e4c5864729a5c9743974aa2cb1655ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/arrow.png using Guid(e4c5864729a5c9743974aa2cb1655ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8c771687a70f06166f60a69008eb7a') in 0.011259 seconds
+  Import took 0.015426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/dot.png
+  artifactKey: Guid(3f0bc5c4d2793c842b3611396cbe44d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/dot.png using Guid(3f0bc5c4d2793c842b3611396cbe44d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea4465af4b067f8f8cbfd8b4422be18a') in 0.013818 seconds
+  Import took 0.017942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/brickwall_occ.png
+  artifactKey: Guid(e6192b11620f3474586d569275b7b5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/brickwall_occ.png using Guid(e6192b11620f3474586d569275b7b5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69969875af184add63b96614c011d630') in 0.016768 seconds
+  Import took 0.020097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/chestrays.png
+  artifactKey: Guid(b2174422c1fe2584289dbafe0e2306c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/chestrays.png using Guid(b2174422c1fe2584289dbafe0e2306c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aea706888cfea3bba13d78d7b5447024') in 0.021984 seconds
+  Import took 0.025246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-8_comp_light.exr
+  artifactKey: Guid(c490d15e9b11cd8408652a868a9d5ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-8_comp_light.exr using Guid(c490d15e9b11cd8408652a868a9d5ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a05e71d97c51b990cd2d9f87bf2503') in 0.018601 seconds
+  Import took 0.021940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/icon_question.png
+  artifactKey: Guid(d4720da51ce452449927c13790d07dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/icon_question.png using Guid(d4720da51ce452449927c13790d07dfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dae2c728d5c84d358303aa636ba8641') in 0.014696 seconds
+  Import took 0.018173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/beamglow.png
+  artifactKey: Guid(7337a1ffd4378fd42816aae18c955de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/beamglow.png using Guid(7337a1ffd4378fd42816aae18c955de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82a248f8d94aa7756816cf0bb3f79017') in 0.013161 seconds
+  Import took 0.016472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/arrow2.png
+  artifactKey: Guid(ca09e3f23a601304795e3a9f9435bb03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/arrow2.png using Guid(ca09e3f23a601304795e3a9f9435bb03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fb80b417d13001eae8a1d1047a44023') in 0.015135 seconds
+  Import took 0.018524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/beam_orange.png
+  artifactKey: Guid(3a1ba414e0e48f44ca654dde011884a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/beam_orange.png using Guid(3a1ba414e0e48f44ca654dde011884a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6edaf2d54062ae7a3441b4183f9b3967') in 0.011920 seconds
+  Import took 0.015164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/brickwall.png
+  artifactKey: Guid(d326a1694743c8e44a6a86e334d59c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/brickwall.png using Guid(d326a1694743c8e44a6a86e334d59c57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '068daf7107def8d4826e36c44d87e13c') in 0.014173 seconds
+  Import took 0.017416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/beam_red.png
+  artifactKey: Guid(bcb10f8080db28749b23c780c9a2a8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/beam_red.png using Guid(bcb10f8080db28749b23c780c9a2a8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04770cdc2b797a2aef842ca4a51343d5') in 0.012843 seconds
+  Import took 0.016363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/coin_normal.tga
+  artifactKey: Guid(5607d763be1234443a71c2c80e9a91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/coin_normal.tga using Guid(5607d763be1234443a71c2c80e9a91ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '599ffe5f6cdb747a2ff2b74700eae7b1') in 0.075655 seconds
+  Import took 0.079096 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/beam_green.png
+  artifactKey: Guid(b1c1ab142f910f441afdc8a5c320a807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/beam_green.png using Guid(b1c1ab142f910f441afdc8a5c320a807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6071c2ca21b5c56293be6f1bb2849f5') in 0.013849 seconds
+  Import took 0.017165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/fire_16x4.png
+  artifactKey: Guid(c44b12ef21d245a42b088c69ed196951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/fire_16x4.png using Guid(c44b12ef21d245a42b088c69ed196951) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f367c5d8fdea4299da241572db472c3') in 0.016195 seconds
+  Import took 0.020035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-3_comp_dir.png
+  artifactKey: Guid(2618498ac242c624fb613c63ba8e0bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-3_comp_dir.png using Guid(2618498ac242c624fb613c63ba8e0bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b556fc7c2c82f379c12af165021228f2') in 0.014435 seconds
+  Import took 0.017743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/droplet.png
+  artifactKey: Guid(227b601d586b15c40ab35fcd5edd10b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/droplet.png using Guid(227b601d586b15c40ab35fcd5edd10b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f474258cdee1bb661727b7df28f51666') in 0.013193 seconds
+  Import took 0.016698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-5_comp_dir.png
+  artifactKey: Guid(0a5ba3632a2e29f4088a5d79c55d404f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-5_comp_dir.png using Guid(0a5ba3632a2e29f4088a5d79c55d404f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c384a946b67d007b7addd97ad34f2b1a') in 0.019689 seconds
+  Import took 0.023467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/cloud.png
+  artifactKey: Guid(4b73d5726f013f140a532e58527afa5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/cloud.png using Guid(4b73d5726f013f140a532e58527afa5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e1710b48bffc649d777eaf3adc7cbf0') in 0.015591 seconds
+  Import took 0.019117 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/chestrays_modular.png
+  artifactKey: Guid(97334b64365c2af408f7c7b867c1c041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/chestrays_modular.png using Guid(97334b64365c2af408f7c7b867c1c041) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efecd08ff30d29c6fe3566ae432e3d88') in 0.014069 seconds
+  Import took 0.017548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/character_ring.png
+  artifactKey: Guid(a3e3d543066a6da49a6cd1c85290a920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/character_ring.png using Guid(a3e3d543066a6da49a6cd1c85290a920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27b7c9863506443c14450a86862fc5a8') in 0.015344 seconds
+  Import took 0.018691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/dot4.png
+  artifactKey: Guid(345d96a2800fd9e48b9971d00f03de88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/dot4.png using Guid(345d96a2800fd9e48b9971d00f03de88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aa8d257a36451a154a252be181fcbb0') in 0.014975 seconds
+  Import took 0.018230 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/beam_purple.png
+  artifactKey: Guid(fddf7078d75bc6a4ea5cf9178dd6d2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/beam_purple.png using Guid(fddf7078d75bc6a4ea5cf9178dd6d2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3adb2ec6b79be10ae3ae1a1c66814c6f') in 0.013149 seconds
+  Import took 0.016270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/icon.png
+  artifactKey: Guid(dc7cbd9fe9204684d8b10065482bb605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/icon.png using Guid(dc7cbd9fe9204684d8b10065482bb605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfdd6900c2f97b9e339ff545dab0eb1c') in 0.017932 seconds
+  Import took 0.021944 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/icon_w_star.png
+  artifactKey: Guid(01b6e286db21996488877cb70303f012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/icon_w_star.png using Guid(01b6e286db21996488877cb70303f012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a75d96062486ba4f343c31308e8b4b') in 0.014538 seconds
+  Import took 0.018061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/fire_torch_16x4.png
+  artifactKey: Guid(ce1ca5a2d2e1afd47be5612d269a4e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/fire_torch_16x4.png using Guid(ce1ca5a2d2e1afd47be5612d269a4e16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82c91f74b01f4cade98242438e27508f') in 0.019167 seconds
+  Import took 0.022583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/grass_n.png
+  artifactKey: Guid(7ecf969f15de162499a6d38a1f111dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/grass_n.png using Guid(7ecf969f15de162499a6d38a1f111dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2c4a4857dfdc79848273839fc38c527') in 0.021941 seconds
+  Import took 0.027608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-2_comp_light.exr
+  artifactKey: Guid(7ea2941d970999d4ea454e0f5378fce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-2_comp_light.exr using Guid(7ea2941d970999d4ea454e0f5378fce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f095531fa036f9c72b48f327823026') in 0.014145 seconds
+  Import took 0.017490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-6_comp_light.exr
+  artifactKey: Guid(33ed958fa74825240af8de5357100dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-6_comp_light.exr using Guid(33ed958fa74825240af8de5357100dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f833357103bd9a03bbce866d52fdf6ad') in 0.015091 seconds
+  Import took 0.018514 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/coin_specular.tga
+  artifactKey: Guid(98c87575388e4df4caf593e9d0085023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/coin_specular.tga using Guid(98c87575388e4df4caf593e9d0085023) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bede4154e4ee225e1fd2a2793c0f98ad') in 0.015823 seconds
+  Import took 0.019674 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-3_comp_light.exr
+  artifactKey: Guid(b5eede9d5d135ba4b91b11e0484e2bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-3_comp_light.exr using Guid(b5eede9d5d135ba4b91b11e0484e2bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcac50c7dff90dcd9ff1e14052ec9c87') in 0.015911 seconds
+  Import took 0.019472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-7_comp_light.exr
+  artifactKey: Guid(34fced388d472d64d849e93c508c19d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-7_comp_light.exr using Guid(34fced388d472d64d849e93c508c19d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bed6cf2a6135e0dbf0dba262f34ea8bc') in 0.018568 seconds
+  Import took 0.021881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000135 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/gui_button2.png
+  artifactKey: Guid(fe9aebfd0e25fbc429bd14a61bbf7b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/gui_button2.png using Guid(fe9aebfd0e25fbc429bd14a61bbf7b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c57d279cab71beebfbe40b2c3a6e21') in 0.033453 seconds
+  Import took 0.038404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/brickwall_n2.png
+  artifactKey: Guid(4daf87ae4b8325a46b030fa7b5e224b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/brickwall_n2.png using Guid(4daf87ae4b8325a46b030fa7b5e224b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80c5727a189f2c9036fa0286bd7889bc') in 0.016705 seconds
+  Import took 0.019920 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/levelup_ring.png
+  artifactKey: Guid(51e8719fee4618b4b85feca7a170c466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/levelup_ring.png using Guid(51e8719fee4618b4b85feca7a170c466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca0012bc1e99b812e7d1e9922e496bee') in 0.016340 seconds
+  Import took 0.019712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/brickwall_n.png
+  artifactKey: Guid(cb1263d458687a4449b8e30735597cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/brickwall_n.png using Guid(cb1263d458687a4449b8e30735597cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d9daa549bb01e3390f79f03b9bdffec') in 0.013651 seconds
+  Import took 0.017200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/fire_magic_16x4.png
+  artifactKey: Guid(17844ef8b7c7d4a4091dbdbc9287bcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/fire_magic_16x4.png using Guid(17844ef8b7c7d4a4091dbdbc9287bcd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9658755effc72803d1a59df4bf2ecb8d') in 0.015652 seconds
+  Import took 0.018932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-0_comp_dir.png
+  artifactKey: Guid(6603e2263dba7d647bd318b7c6afafcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-0_comp_dir.png using Guid(6603e2263dba7d647bd318b7c6afafcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48b2a37a4cf7bfebf179b2f37a27e4f9') in 0.013175 seconds
+  Import took 0.018762 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/basicglow.png
+  artifactKey: Guid(ed380727edbaaa041b59db841ac6bb5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/basicglow.png using Guid(ed380727edbaaa041b59db841ac6bb5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d450e1e267dd0d0b789cad5a26cc352') in 0.017971 seconds
+  Import took 0.021343 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/coin_diffuse.png
+  artifactKey: Guid(6bae8780e11eb22449dec1fa66a00d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/coin_diffuse.png using Guid(6bae8780e11eb22449dec1fa66a00d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90294fff255bc951742df3fb9fa9f51a') in 0.016062 seconds
+  Import took 0.019271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-9_comp_dir.png
+  artifactKey: Guid(2de98cbf22037b34cbbd50fceae08582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-9_comp_dir.png using Guid(2de98cbf22037b34cbbd50fceae08582) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af8383d134f387ab5d6601db2505ee7') in 0.013919 seconds
+  Import took 0.017376 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/brick_base.png
+  artifactKey: Guid(bd02f5e1802038543b54e40c3b5b6dd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/brick_base.png using Guid(bd02f5e1802038543b54e40c3b5b6dd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29e73040663bf942b76f29b9ff7ff25b') in 0.016907 seconds
+  Import took 0.020270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/fire_torch_magic_16x4.png
+  artifactKey: Guid(7393f496cd3fad44d8ec4c31816b0b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/fire_torch_magic_16x4.png using Guid(7393f496cd3fad44d8ec4c31816b0b54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb76b0bf1c6f63ea2fc994c9b4d7df55') in 0.013851 seconds
+  Import took 0.017149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/grass.png
+  artifactKey: Guid(704f745b47541b641a86366e8bb485cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/grass.png using Guid(704f745b47541b641a86366e8bb485cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd24bee2b0380e16e74d2af1403b4a947') in 0.014644 seconds
+  Import took 0.018407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-1_comp_light.exr
+  artifactKey: Guid(244bd8b2eb85a674789d70f7008b33b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-1_comp_light.exr using Guid(244bd8b2eb85a674789d70f7008b33b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9620d6f1cf0366f0f32dbe14d6877ece') in 0.013690 seconds
+  Import took 0.017200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/_Dino/Scenes/Scene1/Lightmap-4_comp_dir.png
+  artifactKey: Guid(a65d565f06d1881498817ba64c23663a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_Dino/Scenes/Scene1/Lightmap-4_comp_dir.png using Guid(a65d565f06d1881498817ba64c23663a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1c2e322145b02be63523685e03c3131') in 0.016352 seconds
+  Import took 0.020106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/Packages/ARPG Effects/Textures/levelup_blast.png
+  artifactKey: Guid(eecda1ea67b0365419fb5e0c46a5c66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Textures/levelup_blast.png using Guid(eecda1ea67b0365419fb5e0c46a5c66a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961106ced1b1a4621f17c6c1d717bec7') in 0.012927 seconds
+  Import took 0.016648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Packages/ARPG Effects/Demo/Textures/brick_ambient.png
+  artifactKey: Guid(7a2c7aefdd337c74ca95ea77ca73e3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Packages/ARPG Effects/Demo/Textures/brick_ambient.png using Guid(7a2c7aefdd337c74ca95ea77ca73e3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52298e035d7f16e1197d9f45b6b92d4a') in 0.013647 seconds
+  Import took 0.016903 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

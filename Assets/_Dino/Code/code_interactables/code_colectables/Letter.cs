@@ -7,13 +7,12 @@ using cod.dino;
 
 public class Letter : MonoBehaviour,IUsable
 {
-    //[SerializeField] private MyLetters myLetters;
-    
+    [Header("Letter")]
     [SerializeField] private string letterID;
     [SerializeField] private bool readLetter;
     [SerializeField] private MainPlayer mainPlayer;
-    private gamelogic_CountMemories countMemories;
-    private int memorie = 1;
+
+    
     public UnityEvent OnUse;
 
     public bool ReadLetter
@@ -35,6 +34,7 @@ public class Letter : MonoBehaviour,IUsable
     public void UseClick()
     {
         mainPlayer.stateInteractions = MainPlayer.playerInteractions.Memories;
+        
         if(OnUse !=null) 
         {
             OnUse.Invoke();
@@ -44,7 +44,6 @@ public class Letter : MonoBehaviour,IUsable
     }
     private void Start()
     {
-        countMemories = GameObject.FindGameObjectWithTag("Gamelogic").GetComponent<gamelogic_CountMemories>();
         mainPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<MainPlayer>();
         ReadLetter = false;
     }
