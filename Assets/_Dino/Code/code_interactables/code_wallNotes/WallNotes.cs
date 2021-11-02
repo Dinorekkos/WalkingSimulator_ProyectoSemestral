@@ -16,15 +16,15 @@ public class WallNotes : MonoBehaviour, IUsable
     [Header("Cameras")]
     [SerializeField] public GameObject cameraAttachedToWall;
     [SerializeField] public GameObject cameraPlayer;
+    [SerializeField]private Camera componentCamera;
     
     [Header("Player")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Transform placetomove;
-
-    
     
     
     public UnityEvent OnUse;
+    public bool interact;
     
     private MainPlayer main;
     private Mouse mouse;
@@ -41,10 +41,11 @@ public class WallNotes : MonoBehaviour, IUsable
         state = wallState.onUse;
         main = GameObject.FindGameObjectWithTag("Player").GetComponent<MainPlayer>();
         main.stateInteractions = MainPlayer.playerInteractions.WallNotes;
-        
-        if(OnUse !=null) 
+
+        if (OnUse != null)
         {
             OnUse.Invoke();
+            interact = true;
         }
     }
     public void ActivateMainCamera()
@@ -53,6 +54,7 @@ public class WallNotes : MonoBehaviour, IUsable
         { 
             cameraPlayer.SetActive(true);
             cameraAttachedToWall.SetActive(false);
+            
         }
     }
 
@@ -62,8 +64,10 @@ public class WallNotes : MonoBehaviour, IUsable
         {
             if (main.stateInteractions == MainPlayer.playerInteractions.NoInteracting)
             {
+                componentCamera.enabled = false;
                 //print("Salir de wallnote");
                 state = wallState.onWaiting;
+                interact = false;
                 try
                 {
                     ActivateMainCamera();
@@ -72,10 +76,12 @@ public class WallNotes : MonoBehaviour, IUsable
                 {
                     print("No se pudo activar main camera");
                 }
+                
             }
         }
         if (main.stateInteractions == MainPlayer.playerInteractions.WallNotes)
         {
+            
             playerTransform.position = placetomove.position;
         }
     }

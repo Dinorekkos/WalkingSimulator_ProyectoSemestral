@@ -45,7 +45,7 @@ public class NotesBehave : MonoBehaviour
     }
     
     Vector3 placedPos;
-    private Camera cam;
+    [SerializeField] private Camera cam;
     private RaycastHit hit;
     private Ray ray;
     private Mouse mouse;
@@ -63,7 +63,7 @@ public class NotesBehave : MonoBehaviour
         mesh = this.GetComponent<MeshRenderer>();
         collider = this.GetComponent<Collider>();
         lean = gameObject.GetComponent<LeanDragTranslate>();
-        cam = lean.Camera;
+        //cam = lean.Camera;
 
         particle.SetActive(false);
         canInteract = false;

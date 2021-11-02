@@ -26,10 +26,12 @@ namespace cod.dino
         [Header("UI Pointer")] [SerializeField]
         private Image pointer;
 
-        [Header("Wall Notes")]
-        [SerializeField] private GameObject[] notesGO;
+        [Header("Wall Notes")] [SerializeField]
+        
+        //[SerializeField] private GameObject[] notesGO;
         private LeanDragTranslate lean;
         private Mouse mouse;
+        
         private void Start()
         {
             Prepare();
@@ -67,19 +69,13 @@ namespace cod.dino
         }
         public void PlayerIsInteractingWithWall()
         {
-            for (int i = 0; i > notesGO.Length; i++)
-            {
-                notesGO[i].GetComponent<LeanDragTranslate>().enabled = true;
-            }
+            
             MakePlayerStatic();
             if (mouse.rightButton.wasPressedThisFrame)
-            {
-               // print("Salir de wallnote");
-                for (int i = 0; i > notesGO.Length; i++)
-                {
-                    notesGO[i].GetComponent<LeanDragTranslate>().enabled = false;
-                }
+            {   
+                
                 stateInteractions = playerInteractions.NoInteracting;
+                
             }
         }
         public void PlayerIsInteractingWithText()

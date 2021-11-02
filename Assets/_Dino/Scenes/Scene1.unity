@@ -3558,7 +3558,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24618
+  m_Name: pb_Mesh18588
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4598,7 +4598,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24760
+  m_Name: pb_Mesh18730
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5561,7 +5561,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24836
+  m_Name: pb_Mesh18806
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5827,7 +5827,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24590
+  m_Name: pb_Mesh18560
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6319,7 +6319,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24354
+  m_Name: pb_Mesh18320
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7196,10 +7196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stateInteractions: 1
   pointer: {fileID: 1986276585}
-  notesGO:
-  - {fileID: 1071562576}
-  - {fileID: 1862815861}
-  - {fileID: 1353914189}
+  lean: {fileID: 0}
 --- !u!114 &548513229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10235,7 +10232,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24772
+  m_Name: pb_Mesh18742
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12824,7 +12821,6 @@ GameObject:
   m_Component:
   - component: {fileID: 963569984}
   - component: {fileID: 963569985}
-  - component: {fileID: 963569986}
   m_Layer: 0
   m_Name: GameplayManager
   m_TagString: Gamelogic
@@ -12859,22 +12855,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseGO: {fileID: 568506981}
---- !u!114 &963569986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963569983}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a734855e3f4000418b4ebaeddc2fae9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  noteGO: {fileID: 1071562576}
-  letter: {fileID: 1298680852}
-  note: {fileID: 1071562582}
-  myletter: {fileID: 1860395322}
 --- !u!4 &965284595 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 1e093714a281058458fef71aad1c76c5, type: 3}
@@ -12961,7 +12941,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23814
+  m_Name: pb_Mesh17780
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15364,6 +15344,7 @@ MonoBehaviour:
   thought: {fileID: 1860395322}
   audioManagerPuzzle: {fileID: 0}
   clipName: 1-AmbientRoom1
+  cam: {fileID: 1699760680}
 --- !u!1 &1078237123
 GameObject:
   m_ObjectHideFlags: 0
@@ -18571,7 +18552,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24652
+  m_Name: pb_Mesh18620
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19044,7 +19025,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23570
+  m_Name: pb_Mesh17536
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20710,7 +20691,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23656
+  m_Name: pb_Mesh17622
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -20874,7 +20855,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24688
+  m_Name: pb_Mesh18656
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -22931,7 +22912,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24898
+  m_Name: pb_Mesh18868
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23095,7 +23076,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24850
+  m_Name: pb_Mesh18820
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23309,7 +23290,8 @@ MonoBehaviour:
   memorie: {fileID: 604445603}
   thought: {fileID: 898116033}
   audioManagerPuzzle: {fileID: 1575841493}
-  clipName: 3NotesRoom2
+  clipName: NotesRoom2
+  cam: {fileID: 1943848072}
 --- !u!114 &1353914192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24024,7 +24006,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24062
+  m_Name: pb_Mesh18028
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24270,7 +24252,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23864
+  m_Name: pb_Mesh17830
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25625,7 +25607,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24336
+  m_Name: pb_Mesh18302
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26602,13 +26584,13 @@ MonoBehaviour:
     pitch: 1
     _volume: 1
     source: {fileID: 0}
-  - name: 3NotesRoom2
+  - name: NotesRoom2
     clip: {fileID: 8300000, guid: ee61f13cf33a4f740923f314021e190f, type: 3}
     AudioMixerGroup: {fileID: 24300002, guid: b9870053885383e45a05d1a95e0f24a2, type: 2}
-    pitch: 0
-    _volume: 0
+    pitch: 1
+    _volume: 1
     source: {fileID: 0}
-  - name: 3NotesRoom3
+  - name: NotesRoom3
     clip: {fileID: 8300000, guid: d3b6932c530bbd64b84090cdfc9f5814, type: 3}
     AudioMixerGroup: {fileID: 24300002, guid: b9870053885383e45a05d1a95e0f24a2, type: 2}
     pitch: 1
@@ -26676,7 +26658,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1593748971}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.73, y: -0.10999966, z: 31.54}
+  m_LocalPosition: {x: -4.59, y: -0.10999966, z: 31.47}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 896033536}
@@ -26716,6 +26698,7 @@ MonoBehaviour:
   state: 0
   cameraAttachedToWall: {fileID: 1943848071}
   cameraPlayer: {fileID: 1248732672}
+  componentCamera: {fileID: 1943848072}
   playerTransform: {fileID: 548513223}
   placetomove: {fileID: 1024598678}
   OnUse:
@@ -26757,6 +26740,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  interact: 0
 --- !u!33 &1593748975
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -27028,7 +27012,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24730
+  m_Name: pb_Mesh18698
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -28840,7 +28824,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24572
+  m_Name: pb_Mesh18542
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29796,7 +29780,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24882
+  m_Name: pb_Mesh18852
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31340,7 +31324,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24940
+  m_Name: pb_Mesh18910
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34207,7 +34191,8 @@ MonoBehaviour:
   memorie: {fileID: 1316279700}
   thought: {fileID: 2070143359}
   audioManagerPuzzle: {fileID: 1575841493}
-  clipName: 3NotesRoom3
+  clipName: NotesRoom3
+  cam: {fileID: 1943848072}
 --- !u!114 &1862815864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34926,7 +34911,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23704
+  m_Name: pb_Mesh17670
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -35404,7 +35389,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24404
+  m_Name: pb_Mesh18370
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36129,7 +36114,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24384
+  m_Name: pb_Mesh18350
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36301,7 +36286,6 @@ GameObject:
   - component: {fileID: 2004483175}
   - component: {fileID: 2004483179}
   - component: {fileID: 2004483174}
-  - component: {fileID: 2004483180}
   m_Layer: 0
   m_Name: WallNotes
   m_TagString: Untagged
@@ -36622,6 +36606,7 @@ MonoBehaviour:
   state: 0
   cameraAttachedToWall: {fileID: 1699760678}
   cameraPlayer: {fileID: 1248732672}
+  componentCamera: {fileID: 1699760680}
   playerTransform: {fileID: 548513223}
   placetomove: {fileID: 1459384363}
   OnUse:
@@ -36663,25 +36648,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2004483180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2004483173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e392440880304364caac739538678495, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Note1
-    clip: {fileID: 0}
-    AudioMixerGroup: {fileID: 0}
-    pitch: 0
-    _volume: 0
-    source: {fileID: 0}
+  interact: 0
 --- !u!4 &2009345211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4694846424373880260, guid: 1202fe8ecd4edcc4babfb8f7a0b5b149, type: 3}
@@ -37282,7 +37249,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24114
+  m_Name: pb_Mesh18080
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39731,7 +39698,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh23966
+  m_Name: pb_Mesh17932
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40105,7 +40072,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24286
+  m_Name: pb_Mesh18252
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
