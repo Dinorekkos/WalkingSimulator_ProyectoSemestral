@@ -125,7 +125,6 @@ public class PlayerCamera : MonoBehaviour
         Ray myRay = myCamera.ScreenPointToRay(coordinate);
         if(Physics.Raycast (myRay, out hit, distanceHit))
         {
-           
             IUsable usable = hit.transform.GetComponent<IUsable>();
             if(usable !=null)
             {
@@ -137,6 +136,12 @@ public class PlayerCamera : MonoBehaviour
             {
                 wallNotes.enabled = true;
             }
+
+            /*NoteTarget noteTarget = hit.transform.GetComponent<NoteTarget>();
+            if (usable != null)
+            {
+                
+            }*/
 
         }
     }
@@ -154,6 +159,7 @@ public class PlayerCamera : MonoBehaviour
 
     public void ReturnCamera()
     {
+        mainCamera.transform.parent = placeCameraContainer.transform.parent;
         mainCamera.transform.position = placeCameraContainer.transform.position;
         mainCamera.depth = dephcamera;
         mainCamera.fieldOfView = fieldofview;

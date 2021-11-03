@@ -136,6 +136,22 @@ public class NotesBehave : MonoBehaviour
             }
         }
     }
+
+    public void MakeNoteTarget()
+    {
+        
+    }
+
+    public void MakeLeanDrag()
+    {
+        
+    }
+
+    public void MakeElseLeanDrag()
+    {
+        
+    }
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("CubeTarget"))

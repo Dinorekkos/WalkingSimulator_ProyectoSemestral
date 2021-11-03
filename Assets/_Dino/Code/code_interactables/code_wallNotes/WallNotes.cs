@@ -17,8 +17,8 @@ public class WallNotes : MonoBehaviour, IUsable
     [SerializeField] public Camera cameraAttachedToWall;
     [SerializeField] public Camera cameraPlayer;
 
-    [SerializeField] public GameObject cameraContainer;
-    //[SerializeField]private Camera componentCamera;
+    [SerializeField] public GameObject playerCameraContainer;
+    
     
     [Header("Player")]
     [SerializeField] private Transform playerTransform;
@@ -55,24 +55,13 @@ public class WallNotes : MonoBehaviour, IUsable
 
     public void MoveMainCamera()
     {
-
-
-
-        cameraPlayer.transform.position = cameraContainer.transform.position;
-        cameraPlayer.transform.rotation = cameraContainer.transform.rotation;
+        cameraPlayer.transform.parent = null;
+        cameraPlayer.gameObject.transform.position = cameraAttachedToWall.transform.position;
+        cameraPlayer.gameObject.transform.rotation = cameraAttachedToWall.gameObject.transform.rotation;
         cameraPlayer.fieldOfView = cameraAttachedToWall.fieldOfView;
         cameraPlayer.depth = cameraAttachedToWall.depth;
     }
-    public void ActivateMainCamera()
-    {
-        /*if (cameraAttachedToWall.activeInHierarchy && !cameraPlayer.activeInHierarchy)
-        { 
-            cameraPlayer.SetActive(true);
-            cameraAttachedToWall.SetActive(false);
-            
-        }*/
-    }
-
+    
     private void Update()
     {
         if (mouse.rightButton.wasPressedThisFrame)
@@ -84,7 +73,6 @@ public class WallNotes : MonoBehaviour, IUsable
                 
                 try
                 {
-                    ActivateMainCamera();
                     playerCameraScript.ReturnCamera();
                 }
                 catch
