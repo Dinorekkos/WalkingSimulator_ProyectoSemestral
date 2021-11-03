@@ -7114,7 +7114,7 @@ Transform:
   m_LocalScale: {x: 1.4320885, y: 1.4320885, z: 1.4320885}
   m_Children:
   - {fileID: 947512000}
-  - {fileID: 1248732675}
+  - {fileID: 1637486880}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7181,6 +7181,8 @@ MonoBehaviour:
   speedCamera: {fileID: 11400000, guid: 494e10cc245f0e94d9a16f09a6aa3faf, type: 2}
   invertedYBool: {fileID: 11400000, guid: 4ae8600447fb94e4ea16847ab21e97eb, type: 2}
   invertedXBool: {fileID: 11400000, guid: b83f1a4a1b8be204ba9fd1f10c56ac12, type: 2}
+  placeCameraContainer: {fileID: 1637486879}
+  mainCamera: {fileID: 1248732674}
   distanceHit: 2.42
 --- !u!114 &548513228
 MonoBehaviour:
@@ -15344,7 +15346,7 @@ MonoBehaviour:
   thought: {fileID: 1860395322}
   audioManagerPuzzle: {fileID: 0}
   clipName: 1-AmbientRoom1
-  cam: {fileID: 1699760680}
+  cam: {fileID: 1248732674}
 --- !u!1 &1078237123
 GameObject:
   m_ObjectHideFlags: 0
@@ -15500,7 +15502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallNotes: {fileID: 1593748974}
-  camera: {fileID: 1943848072}
+  camera: {fileID: 1248732674}
   targetsNotes:
   - {fileID: 17454085}
   - {fileID: 17454085}
@@ -20679,11 +20681,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248732672}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07, y: 1.6219999, z: 0.232}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 548513223}
-  m_RootOrder: 1
+  m_Father: {fileID: 1637486880}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1271957162
 Mesh:
@@ -22561,6 +22563,37 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1326903768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1326903769}
+  m_Layer: 0
+  m_Name: CameraContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1326903769
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326903768}
+  m_LocalRotation: {x: 0.0301133, y: -0, z: -0, w: 0.9995465}
+  m_LocalPosition: {x: 2.03, y: 1.72, z: -3.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1943848074}
+  m_Father: {fileID: 1593748972}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 3.451, y: 0, z: 0}
 --- !u!1 &1330902659
 GameObject:
   m_ObjectHideFlags: 0
@@ -22912,7 +22945,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18868
+  m_Name: pb_Mesh18866
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -23291,7 +23324,7 @@ MonoBehaviour:
   thought: {fileID: 898116033}
   audioManagerPuzzle: {fileID: 1575841493}
   clipName: NotesRoom2
-  cam: {fileID: 1943848072}
+  cam: {fileID: 1248732674}
 --- !u!114 &1353914192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23907,6 +23940,51 @@ MonoBehaviour:
           m_StringArgument: Puzzle2_Door
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1421971859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1421971860}
+  - component: {fileID: 1421971861}
+  m_Layer: 0
+  m_Name: CameraContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1421971860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421971859}
+  m_LocalRotation: {x: 0.0301133, y: -0, z: -0, w: 0.9995465}
+  m_LocalPosition: {x: 2.03, y: 1.72, z: -3.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1699760681}
+  m_Father: {fileID: 2004483178}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 3.451, y: 0, z: 0}
+--- !u!65 &1421971861
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421971859}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1431098327
 GameObject:
   m_ObjectHideFlags: 0
@@ -26664,7 +26742,7 @@ Transform:
   - {fileID: 896033536}
   - {fileID: 1086994443}
   - {fileID: 1024598678}
-  - {fileID: 1943848074}
+  - {fileID: 1326903769}
   - {fileID: 2122732195}
   - {fileID: 2596319}
   m_Father: {fileID: 708605239}
@@ -26696,38 +26774,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  cameraAttachedToWall: {fileID: 1943848071}
-  cameraPlayer: {fileID: 1248732672}
-  componentCamera: {fileID: 1943848072}
+  cameraAttachedToWall: {fileID: 1943848072}
+  cameraPlayer: {fileID: 1248732674}
+  cameraContainer: {fileID: 1326903768}
   playerTransform: {fileID: 548513223}
   placetomove: {fileID: 1024598678}
+  playerCameraScript: {fileID: 548513227}
   OnUse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1943848071}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1248732672}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1986276583}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -27603,6 +27658,37 @@ Transform:
   - {fileID: 40503063}
   - {fileID: 1770842164}
   m_Father: {fileID: 31770432}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1637486879
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1637486880}
+  m_Layer: 0
+  m_Name: CameraContainer
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1637486880
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637486879}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.07, y: 1.6219999, z: 0.232}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1248732675}
+  m_Father: {fileID: 548513223}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1642382735
@@ -28606,12 +28692,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699760678}
-  m_LocalRotation: {x: 0.0301133, y: -0, z: -0, w: 0.9995465}
-  m_LocalPosition: {x: 2.03, y: 1.72, z: -3.04}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2004483178}
-  m_RootOrder: 3
+  m_Father: {fileID: 1421971860}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 3.451, y: 0, z: 0}
 --- !u!1001 &1711640256
 PrefabInstance:
@@ -29780,7 +29866,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18852
+  m_Name: pb_Mesh18850
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31324,7 +31410,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18910
+  m_Name: pb_Mesh18908
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34192,7 +34278,7 @@ MonoBehaviour:
   thought: {fileID: 2070143359}
   audioManagerPuzzle: {fileID: 1575841493}
   clipName: NotesRoom3
-  cam: {fileID: 1943848072}
+  cam: {fileID: 1248732674}
 --- !u!114 &1862815864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35291,12 +35377,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1943848071}
-  m_LocalRotation: {x: 0.0301133, y: -0, z: -0, w: 0.9995465}
-  m_LocalPosition: {x: 2.03, y: 1.72, z: -3.04}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1593748972}
-  m_RootOrder: 3
+  m_Father: {fileID: 1326903769}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 3.451, y: 0, z: 0}
 --- !u!4 &1955925103 stripped
 Transform:
@@ -35708,7 +35794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wallNotes: {fileID: 2004483179}
-  camera: {fileID: 1699760680}
+  camera: {fileID: 1248732674}
   targetsNotes:
   - {fileID: 312950462}
   gameojects:
@@ -36585,7 +36671,7 @@ Transform:
   - {fileID: 41028885}
   - {fileID: 1981585077}
   - {fileID: 1459384363}
-  - {fileID: 1699760681}
+  - {fileID: 1421971860}
   - {fileID: 1050279516}
   - {fileID: 273984808}
   m_Father: {fileID: 708605239}
@@ -36604,27 +36690,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
-  cameraAttachedToWall: {fileID: 1699760678}
-  cameraPlayer: {fileID: 1248732672}
-  componentCamera: {fileID: 1699760680}
+  cameraAttachedToWall: {fileID: 1699760680}
+  cameraPlayer: {fileID: 1248732674}
+  cameraContainer: {fileID: 1421971859}
   playerTransform: {fileID: 548513223}
   placetomove: {fileID: 1459384363}
+  playerCameraScript: {fileID: 548513227}
   OnUse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1699760678}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1248732672}
+      - m_Target: {fileID: 1986276583}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -36636,10 +36711,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1986276583}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2004483179}
+        m_TargetAssemblyTypeName: WallNotes, Assembly-CSharp
+        m_MethodName: MoveMainCamera
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

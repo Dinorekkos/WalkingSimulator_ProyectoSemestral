@@ -16,6 +16,9 @@ public class PlayerCamera : MonoBehaviour
     Camera myCamera;
     float rotationLimit = 0f;
     float rotationX = 0f;
+    private float dephcamera;
+    private float fieldofview;
+
 
     [Header("Player")]
     [SerializeField] private Transform player;
@@ -23,6 +26,8 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] FloatVariables speedCamera;
     [SerializeField] BoolVariables invertedYBool;
     [SerializeField] private BoolVariables invertedXBool;
+    [SerializeField] private GameObject placeCameraContainer;
+    [SerializeField] private Camera mainCamera;
     [Header("Raycast")]
     [Range(0f,3f)]
     [SerializeField]float distanceHit = 1;
@@ -68,6 +73,9 @@ public class PlayerCamera : MonoBehaviour
 		#endif
         try{myCamera = Camera.main;}
         catch{myCamera = GetComponent<Camera>();}
+
+        dephcamera = mainCamera.depth;
+        fieldofview = mainCamera.fieldOfView;
 
 		Active = true;  
     }
@@ -142,6 +150,15 @@ public class PlayerCamera : MonoBehaviour
     {
          Cursor.lockState = CursorLockMode.None;
          Cursor.visible = true;
+    }
+
+    public void ReturnCamera()
+    {
+        mainCamera.transform.position = placeCameraContainer.transform.position;
+        mainCamera.depth = dephcamera;
+        mainCamera.fieldOfView = fieldofview;
+
+
     }
     
 }

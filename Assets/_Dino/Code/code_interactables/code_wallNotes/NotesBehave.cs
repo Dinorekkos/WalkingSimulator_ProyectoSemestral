@@ -63,7 +63,7 @@ public class NotesBehave : MonoBehaviour
         mesh = this.GetComponent<MeshRenderer>();
         collider = this.GetComponent<Collider>();
         lean = gameObject.GetComponent<LeanDragTranslate>();
-        //cam = lean.Camera;
+        //cam = Camera.main;
 
         particle.SetActive(false);
         canInteract = false;

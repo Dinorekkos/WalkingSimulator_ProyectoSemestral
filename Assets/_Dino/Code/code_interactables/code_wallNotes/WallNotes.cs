@@ -14,15 +14,17 @@ public class WallNotes : MonoBehaviour, IUsable
     }
     
     [Header("Cameras")]
-    [SerializeField] public GameObject cameraAttachedToWall;
-    [SerializeField] public GameObject cameraPlayer;
-    [SerializeField]private Camera componentCamera;
+    [SerializeField] public Camera cameraAttachedToWall;
+    [SerializeField] public Camera cameraPlayer;
+
+    [SerializeField] public GameObject cameraContainer;
+    //[SerializeField]private Camera componentCamera;
     
     [Header("Player")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Transform placetomove;
-    
-    
+    [SerializeField] private PlayerCamera playerCameraScript;
+
     public UnityEvent OnUse;
     public bool interact;
     
@@ -38,24 +40,37 @@ public class WallNotes : MonoBehaviour, IUsable
     bool canInteract;
     public void UseClick()
     {
+        interact = true;
         state = wallState.onUse;
         main = GameObject.FindGameObjectWithTag("Player").GetComponent<MainPlayer>();
         main.stateInteractions = MainPlayer.playerInteractions.WallNotes;
 
         if (OnUse != null)
         {
+            
             OnUse.Invoke();
-            interact = true;
+            
         }
+    }
+
+    public void MoveMainCamera()
+    {
+
+
+
+        cameraPlayer.transform.position = cameraContainer.transform.position;
+        cameraPlayer.transform.rotation = cameraContainer.transform.rotation;
+        cameraPlayer.fieldOfView = cameraAttachedToWall.fieldOfView;
+        cameraPlayer.depth = cameraAttachedToWall.depth;
     }
     public void ActivateMainCamera()
     {
-        if (cameraAttachedToWall.activeInHierarchy && !cameraPlayer.activeInHierarchy)
+        /*if (cameraAttachedToWall.activeInHierarchy && !cameraPlayer.activeInHierarchy)
         { 
             cameraPlayer.SetActive(true);
             cameraAttachedToWall.SetActive(false);
             
-        }
+        }*/
     }
 
     private void Update()
@@ -64,13 +79,13 @@ public class WallNotes : MonoBehaviour, IUsable
         {
             if (main.stateInteractions == MainPlayer.playerInteractions.NoInteracting)
             {
-                componentCamera.enabled = false;
-                //print("Salir de wallnote");
-                state = wallState.onWaiting;
                 interact = false;
+                state = wallState.onWaiting;
+                
                 try
                 {
                     ActivateMainCamera();
+                    playerCameraScript.ReturnCamera();
                 }
                 catch
                 {
@@ -79,10 +94,15 @@ public class WallNotes : MonoBehaviour, IUsable
                 
             }
         }
-        if (main.stateInteractions == MainPlayer.playerInteractions.WallNotes)
+        if (state == wallState.onUse)
         {
-            
+            //componentCamera.enabled = true;
+            print("interactuando con este wall notes" );
             playerTransform.position = placetomove.position;
+        }
+        else
+        {
+            //componentCamera.enabled = false;
         }
     }
 
