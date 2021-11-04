@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-
 public class WallCheckIds : MonoBehaviour
 {
    [Header("Event")] 
@@ -17,13 +16,11 @@ public class WallCheckIds : MonoBehaviour
    [Header("Notes")]
    [SerializeField] private Camera camera;
    [SerializeField] private NoteTarget[] targetsNotes;
-   [SerializeField] private GameObject[] gameojects;
 
    [Header("Audio")]
    [SerializeField] private AudioManagerPuzzle audioManagerPuzzle;
    [SerializeField] private string clipName;
-
-   //[SerializeField] private string[] soundsArray;
+   
    
    private Mouse mouse;
    private RaycastHit hit;
@@ -33,7 +30,6 @@ public class WallCheckIds : MonoBehaviour
    public void CheckTargetsID()
    {
       allValid = true;
-      //Checa si hay notas validas
       for (int i = 0; i < targetsNotes.Length; i++)
       {
          if (targetsNotes[i].IsValid == false)
@@ -50,15 +46,9 @@ public class WallCheckIds : MonoBehaviour
 
    void OpenDoor()
    {
-      //Si todas las notas son validas se puede abrir la puerta
       if (allValid)
       {
          onUse.Invoke();
-         /*for (int i = 0; i < gameojects.Length ; i++)
-         {
-            gameojects[i].SetActive(false);
-         }*/
-
          audioManagerPuzzle.Play(clipName);
       }
    }
@@ -73,7 +63,6 @@ public class WallCheckIds : MonoBehaviour
             WallCheckIds checker = hit.transform.GetComponent<WallCheckIds>();
             if (checker != null)
             {
-               //print("ray hits");
                CheckTargetsID();
                OpenDoor();
                

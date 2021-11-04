@@ -1,17 +1,31 @@
 using System;
 using UnityEngine;
-
-public class NoteTarget : MonoBehaviour
+using UnityEngine.Events;
+public class NoteTarget : MonoBehaviour,IUsable
 {
+
     [SerializeField] private GameObject particle;
     [SerializeField] private NotesBehave noteAttached;
     [SerializeField] private string targetID = "";
     [SerializeField] private bool isValid;
 
+    public UnityEvent onUse;
+    
     private bool hasNote;
     private MeshRenderer mesh;
     private Collider collider;
+    private bool canInteract;
 
+    public bool CanInteract 
+    { get; set; }
+
+    public void UseClick()
+    {
+        if (onUse != null)
+        {
+            onUse.Invoke();
+        }
+    }
     public string TargetId
     {
         get { return targetID; }

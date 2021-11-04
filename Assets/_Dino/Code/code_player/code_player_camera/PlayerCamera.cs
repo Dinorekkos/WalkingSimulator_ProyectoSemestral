@@ -14,20 +14,10 @@ public class PlayerCamera : MonoBehaviour
     {
         Static, Moving
     }
-    Mouse mouse;
-    Camera myCamera;
-    float rotationLimit = 0f;
-    float rotationX = 0f;
-    private float dephcamera;
-    private float fieldofview;
-    private LeanDragTranslate lean;
-    //private NotesBehave notesBehave;
-    private NotesBehave saveNotesBehave;
-
-
+    
+    
     [Header("Player")]
     [SerializeField] private Transform player;
-
     [SerializeField] private MainPlayer mainPlayer;
     [Header("Camera")]
     [SerializeField] FloatVariables speedCamera;
@@ -38,7 +28,15 @@ public class PlayerCamera : MonoBehaviour
     [Header("Raycast")]
     [Range(0f,3f)]
     [SerializeField]float distanceHit = 1;
-
+    
+    Mouse mouse;
+    Camera myCamera;
+    float rotationLimit = 0f;
+    float rotationX = 0f;
+    private float dephcamera;
+    private float fieldofview;
+    private LeanDragTranslate lean;
+    private NotesBehave saveNotesBehave;
     bool active;
     bool invertedYAxis;
     bool invertedXAxis;
@@ -90,11 +88,6 @@ public class PlayerCamera : MonoBehaviour
                                 lean = null;
                             }
                         }
-                        /* 
-                        if (notesBehave.state == NotesBehave.NoteState.Placed)
-                        {
-                            lean.CanDrag = false;
-                        }*/
                     } 
                     UnblockedMouse();
                 }
@@ -178,8 +171,6 @@ public class PlayerCamera : MonoBehaviour
         Ray myRay = myCamera.ScreenPointToRay(mouse.position.ReadValue());
         if(Physics.Raycast (myRay, out hit, 100))
         {
-            print(hit.transform.name);
-            
             IUsable usable = hit.transform.GetComponent<IUsable>();
             if(usable !=null)
             {
@@ -218,14 +209,10 @@ public class PlayerCamera : MonoBehaviour
                     if(saveNotesBehave.IsinPlaced && noteTarget.HasNote)
                     {
                         saveNotesBehave.IsinPlaced = false;
-                        
                     }
                 }
-                
             }
-            
-        }  
-        
+        }
     }
    private void BlockMouse()
     {

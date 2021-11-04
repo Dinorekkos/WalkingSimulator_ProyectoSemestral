@@ -33,7 +33,7 @@ public class NotesBehave : MonoBehaviour,IUsable
         set { leanCatchRay = value; }
     }
 
-        [Header("Visuals")] 
+    [Header("Visuals")] 
     [SerializeField] private GameObject particle;
     [Header("ID")]
     [SerializeField] public string noteID = "";
@@ -42,50 +42,31 @@ public class NotesBehave : MonoBehaviour,IUsable
     [SerializeField] private Letter memorie;
     [SerializeField] private Letter thought;
     
-    [Header("AudioManager")]
-    [SerializeField] private AudioManagerPuzzle audioManagerPuzzle;
-
-    [SerializeField] private string clipName;
-    
     private bool canInteract;
-    public bool clickOnNote;
 
     public bool CanInteract
     {
         get { return canInteract; }
         set { canInteract = value; }
     }
-    [SerializeField] private Camera cam;
     Vector3 placedPos;
     private RaycastHit hit;
     private Ray ray;
     private Mouse mouse;
-    
-    private LeanDragTranslate lean;
     private NoteTarget noteTarget;
-    private SoundNotes soundNotes;
-    
     private Vector3 inicialPos;
     private Collider collider;
     private MeshRenderer mesh;
     private void Start()
     {
-        #if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_EDITOR || UNITY_STANDALONE_LINUX
-        mouse = Mouse.current;
-        #endif
         mesh = this.GetComponent<MeshRenderer>();
         collider = this.GetComponent<Collider>();
-        lean = gameObject.GetComponent<LeanDragTranslate>();
-        soundNotes = GetComponent<SoundNotes>();
-        
-        clickOnNote = false;
         particle.SetActive(false);
         canInteract = false;
         inicialPos = transform.position;
         state = NoteState.Idle;
         mesh.enabled = false;
         collider.enabled = false;
-        audioManagerPuzzle = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManagerPuzzle>();
     }
 
     private void Update()
@@ -115,7 +96,7 @@ public class NotesBehave : MonoBehaviour,IUsable
         if(onUse !=null)
         {
             onUse.Invoke();
-            print("Insertar audio nota en evento");
+            
         }
     }
 
@@ -123,7 +104,7 @@ public class NotesBehave : MonoBehaviour,IUsable
     {
         if (other.CompareTag("CubeTarget"))
         {
-            print("Detect Collider Note target");
+            
             noteTarget = other.GetComponent<NoteTarget>();
             noteTarget.HasNote = true;
             state = NoteState.Placed;
