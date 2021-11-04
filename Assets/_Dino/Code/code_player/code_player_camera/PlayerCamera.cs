@@ -21,7 +21,7 @@ public class PlayerCamera : MonoBehaviour
     private float dephcamera;
     private float fieldofview;
     private LeanDragTranslate lean;
-    private NotesBehave notesBehave;
+    //private NotesBehave notesBehave;
     private NotesBehave saveNotesBehave;
 
 
@@ -75,17 +75,17 @@ public class PlayerCamera : MonoBehaviour
                        else if (!mouse.leftButton.IsPressed())
                         {
                             
-                            if (notesBehave != null)
+                            if (saveNotesBehave != null)
                             {
-                                if (!notesBehave.IsinPlaced)
+                                if (!saveNotesBehave.IsinPlaced)
                                 {
-                                    notesBehave.state = NotesBehave.NoteState.Idle;
+                                    saveNotesBehave.state = NotesBehave.NoteState.Idle;
                                 }
                             }
                             
                             if (lean!=null)
                             {
-                                notesBehave.LeanCatchRay = false;
+                                saveNotesBehave.LeanCatchRay = false;
                                 lean.CanDrag = false;
                                 lean = null;
                             }
@@ -186,15 +186,19 @@ public class PlayerCamera : MonoBehaviour
                 usable.UseClick();
             }
 
-            notesBehave = hit.transform.GetComponent<NotesBehave>();
-            //saveNotesBehave = notesBehave;
-            {
-                if (notesBehave != null)
-                {
-                    if (hit.transform.GetComponent<LeanDragTranslate>())
+           NotesBehave notesBehave = hit.transform.GetComponent<NotesBehave>();
+           if (notesBehave != null)
+           {
+               if (!hit.transform.GetComponent<NotesBehave>())
+               {
+                   saveNotesBehave = notesBehave;
+               }
+               saveNotesBehave = hit.transform.GetComponent<NotesBehave>();
+               
+               if (hit.transform.GetComponent<LeanDragTranslate>())
                     {
-                        notesBehave.LeanCatchRay = true;
-                        notesBehave.state = NotesBehave.NoteState.Dragging;
+                        saveNotesBehave.LeanCatchRay = true;
+                        saveNotesBehave.state = NotesBehave.NoteState.Dragging;
                         lean = hit.transform.GetComponent<LeanDragTranslate>();
                         lean.CanDrag = true;
                     }
@@ -204,20 +208,17 @@ public class PlayerCamera : MonoBehaviour
                         lean.CanDrag = false;
                     }
                 }
-            } 
+            
           
             NoteTarget noteTarget = hit.transform.GetComponent<NoteTarget>();
             if (noteTarget != null)
             {
-                print("ray choca con note target");
-                
                 if (saveNotesBehave != null)
                 {
-                    print("Existe note behave");
                     if(saveNotesBehave.IsinPlaced && noteTarget.HasNote)
                     {
-                        //notesBehave.IsinPlaced = false;
-                        print("Regresar nota");
+                        saveNotesBehave.IsinPlaced = false;
+                        
                     }
                 }
                 

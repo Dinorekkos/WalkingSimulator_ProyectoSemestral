@@ -107,56 +107,7 @@ public class NotesBehave : MonoBehaviour,IUsable
             {
                 CheckID();
             }
-
-            if (leanCatchRay)
-            {
-               // print("LeanCathRay" + leanCatchRay);
-               // print("Lean candrag" + lean.CanDrag);
-            }
-            /*if (mouse.leftButton.wasPressedThisFrame)
-            {
-                ray = cam.ScreenPointToRay(mouse.position.ReadValue());
-                if (Physics.Raycast(ray.origin, ray.direction, out hit))
-                {
-
-                        NoteTarget noteTarget = hit.transform.GetComponent<NoteTarget>();
-                        if (noteTarget != null)
-                        {
-                            if (this.IsinPlaced && noteTarget.HasNote)
-                            {
-                                IsinPlaced = false;
-                            }
-                        }
-                        LeanDragTranslate leanDragTranslate = hit.transform.GetComponent<LeanDragTranslate>();
-                        if (leanDragTranslate != null)
-                        {
-                            
-                            state = NoteState.Dragging;
-                            lean = hit.transform.GetComponent<LeanDragTranslate>();
-                            lean.CanDrag = true;
-                        }
-                        
-                        else if (leanDragTranslate == null)
-                        {
-                            if(lean !=null)
-                            lean.CanDrag = false;
-                        }
-                       
-                    }
-                }
-            else if (!mouse.leftButton.IsPressed())
-                {
-                    if (!IsinPlaced)
-                    {
-                        state = NoteState.Idle;
-                    }
-                    if (lean)
-                    {
-                        lean.CanDrag = false;
-                        lean = null;
-                    }
-                }*/
-            }
+        }
     }
 
     public void UseClick()
