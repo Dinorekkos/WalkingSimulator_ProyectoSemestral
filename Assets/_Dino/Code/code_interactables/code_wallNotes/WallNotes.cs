@@ -84,14 +84,9 @@ public class WallNotes : MonoBehaviour, IUsable
         }
         if (state == wallState.onUse)
         {
-            //componentCamera.enabled = true;
-            print("interactuando con este wall notes" );
             playerTransform.position = placetomove.position;
         }
-        else
-        {
-            //componentCamera.enabled = false;
-        }
+        
     }
 
     private void Start()
@@ -100,7 +95,7 @@ public class WallNotes : MonoBehaviour, IUsable
         mouse = Mouse.current;
         #endif
 
-        this.GetComponent<WallNotes>().enabled = false;
+        //this.GetComponent<WallNotes>().enabled = false;
         state = wallState.onWaiting;
     }
 }

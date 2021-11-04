@@ -9,10 +9,10 @@ namespace Lean.Touch
 	[AddComponentMenu(LeanTouch.ComponentPathPrefix + "Drag Translate")]
 	public class LeanDragTranslate : MonoBehaviour
 	{
-		public bool CanDrag;
+		
 		/// <summary>The method used to find fingers to use with this component. See LeanFingerFilter documentation for more information.</summary>
 		public LeanFingerFilter Use = new LeanFingerFilter(true);
-
+		[SerializeField]public bool CanDrag;
 		/// <summary>The camera the translation will be calculated using.
 		/// None/null = MainCamera.</summary>
 		public Camera Camera { set { _camera = value; } get { return _camera; } } [FSA("Camera")] [SerializeField] private Camera _camera;

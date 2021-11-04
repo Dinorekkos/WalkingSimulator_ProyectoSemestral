@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Lean.Touch;
+using Lean.Touch.Editor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,10 +20,15 @@ public class PlayerCamera : MonoBehaviour
     float rotationX = 0f;
     private float dephcamera;
     private float fieldofview;
+    private LeanDragTranslate lean;
+    private NotesBehave notesBehave;
+    private NotesBehave saveNotesBehave;
 
 
     [Header("Player")]
     [SerializeField] private Transform player;
+
+    [SerializeField] private MainPlayer mainPlayer;
     [Header("Camera")]
     [SerializeField] FloatVariables speedCamera;
     [SerializeField] BoolVariables invertedYBool;
@@ -45,7 +52,6 @@ public class PlayerCamera : MonoBehaviour
     {
         Prepare();
     }
-
     
     void Update()
     {
@@ -60,6 +66,36 @@ public class PlayerCamera : MonoBehaviour
                 }
                 else if(state == cameraState.Static)
                 {
+                    if (mainPlayer.stateInteractions == MainPlayer.playerInteractions.WallNotes)
+                    {
+                        if (mouse.leftButton.wasPressedThisFrame)
+                        {
+                            RaycastFromWallNotes();
+                        }
+                       else if (!mouse.leftButton.IsPressed())
+                        {
+                            
+                            if (notesBehave != null)
+                            {
+                                if (!notesBehave.IsinPlaced)
+                                {
+                                    notesBehave.state = NotesBehave.NoteState.Idle;
+                                }
+                            }
+                            
+                            if (lean!=null)
+                            {
+                                notesBehave.LeanCatchRay = false;
+                                lean.CanDrag = false;
+                                lean = null;
+                            }
+                        }
+                        /* 
+                        if (notesBehave.state == NotesBehave.NoteState.Placed)
+                        {
+                            lean.CanDrag = false;
+                        }*/
+                    } 
                     UnblockedMouse();
                 }
             }
@@ -113,37 +149,82 @@ public class PlayerCamera : MonoBehaviour
         //Check Click to interact
         if(mouse.leftButton.wasPressedThisFrame)
         {
-            GetViewInfo();
+            if (mainPlayer.stateInteractions == MainPlayer.playerInteractions.NoInteracting)
+            {
+                GetViewInfo();
+            }
         }
         
     }
 
     void GetViewInfo()
+    {   
+            RaycastHit hit;
+             Vector2 coordinate = new Vector2 (Screen.width/2,Screen.height/2);
+             Ray myRay = myCamera.ScreenPointToRay(coordinate);
+             if(Physics.Raycast (myRay, out hit, distanceHit))
+             {
+                 IUsable usable = hit.transform.GetComponent<IUsable>();
+                 if(usable !=null)
+                 {
+                     usable.UseClick();
+                 }
+             }
+    }
+
+    void RaycastFromWallNotes()
     {
         RaycastHit hit;
-        Vector2 coordinate = new Vector2 (Screen.width/2,Screen.height/2);
-        Ray myRay = myCamera.ScreenPointToRay(coordinate);
-        if(Physics.Raycast (myRay, out hit, distanceHit))
+        Ray myRay = myCamera.ScreenPointToRay(mouse.position.ReadValue());
+        if(Physics.Raycast (myRay, out hit, 100))
         {
+            print(hit.transform.name);
+            
             IUsable usable = hit.transform.GetComponent<IUsable>();
             if(usable !=null)
             {
                 usable.UseClick();
             }
 
-            WallNotes wallNotes = hit.transform.GetComponent<WallNotes>();
-            if (wallNotes != null)
+            notesBehave = hit.transform.GetComponent<NotesBehave>();
+            //saveNotesBehave = notesBehave;
             {
-                wallNotes.enabled = true;
-            }
-
-            /*NoteTarget noteTarget = hit.transform.GetComponent<NoteTarget>();
-            if (usable != null)
+                if (notesBehave != null)
+                {
+                    if (hit.transform.GetComponent<LeanDragTranslate>())
+                    {
+                        notesBehave.LeanCatchRay = true;
+                        notesBehave.state = NotesBehave.NoteState.Dragging;
+                        lean = hit.transform.GetComponent<LeanDragTranslate>();
+                        lean.CanDrag = true;
+                    }
+                    else if(!hit.transform.GetComponent<LeanDragTranslate>())
+                    {
+                        if(lean!=null)
+                        lean.CanDrag = false;
+                    }
+                }
+            } 
+          
+            NoteTarget noteTarget = hit.transform.GetComponent<NoteTarget>();
+            if (noteTarget != null)
             {
+                print("ray choca con note target");
                 
-            }*/
-
-        }
+                if (saveNotesBehave != null)
+                {
+                    print("Existe note behave");
+                    if(saveNotesBehave.IsinPlaced && noteTarget.HasNote)
+                    {
+                        //notesBehave.IsinPlaced = false;
+                        print("Regresar nota");
+                    }
+                }
+                
+            }
+            
+        }  
+        
     }
    private void BlockMouse()
     {
@@ -167,6 +248,6 @@ public class PlayerCamera : MonoBehaviour
 
     }
     
-}
+    }
 }
 

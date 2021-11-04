@@ -74,14 +74,11 @@ namespace cod.dino
                         {
                             animationController.IdleAnim();
                         }
-                        //Quiero hacer un commit
                     }
                    
             }
             
         }
-
-
         void CheckInputKeyBoard()
         {
             movementDirection = Vector3.zero;
@@ -123,9 +120,6 @@ namespace cod.dino
             {
                 animationController.IdleAnim();
             }
-
-            
-        
                 Gravity();
                 movementDirection.Normalize();
                 Move(movementDirection);

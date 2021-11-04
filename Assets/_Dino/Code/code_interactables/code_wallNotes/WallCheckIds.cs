@@ -5,8 +5,12 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
+
 public class WallCheckIds : MonoBehaviour
 {
+   [Header("Event")] 
+   public UnityEvent onUse;
+   
    [Header("WallNotes")]
    [SerializeField] private WallNotes wallNotes;
 
@@ -49,10 +53,11 @@ public class WallCheckIds : MonoBehaviour
       //Si todas las notas son validas se puede abrir la puerta
       if (allValid)
       {
-         for (int i = 0; i < gameojects.Length ; i++)
+         onUse.Invoke();
+         /*for (int i = 0; i < gameojects.Length ; i++)
          {
             gameojects[i].SetActive(false);
-         }
+         }*/
 
          audioManagerPuzzle.Play(clipName);
       }
