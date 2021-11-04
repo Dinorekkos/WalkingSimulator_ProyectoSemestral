@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Lean.Touch;
+using Lean.Touch.Editor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,21 +14,29 @@ public class PlayerCamera : MonoBehaviour
     {
         Static, Moving
     }
-    Mouse mouse;
-    Camera myCamera;
-    float rotationLimit = 0f;
-    float rotationX = 0f;
-
+    
+    
     [Header("Player")]
     [SerializeField] private Transform player;
+    [SerializeField] private MainPlayer mainPlayer;
     [Header("Camera")]
     [SerializeField] FloatVariables speedCamera;
     [SerializeField] BoolVariables invertedYBool;
     [SerializeField] private BoolVariables invertedXBool;
+    [SerializeField] private GameObject placeCameraContainer;
+    [SerializeField] private Camera mainCamera;
     [Header("Raycast")]
     [Range(0f,3f)]
     [SerializeField]float distanceHit = 1;
-
+    
+    Mouse mouse;
+    Camera myCamera;
+    float rotationLimit = 0f;
+    float rotationX = 0f;
+    private float dephcamera;
+    private float fieldofview;
+    private LeanDragTranslate lean;
+    private NotesBehave saveNotesBehave;
     bool active;
     bool invertedYAxis;
     bool invertedXAxis;
@@ -40,7 +50,6 @@ public class PlayerCamera : MonoBehaviour
     {
         Prepare();
     }
-
     
     void Update()
     {
@@ -55,6 +64,31 @@ public class PlayerCamera : MonoBehaviour
                 }
                 else if(state == cameraState.Static)
                 {
+                    if (mainPlayer.stateInteractions == MainPlayer.playerInteractions.WallNotes)
+                    {
+                        if (mouse.leftButton.wasPressedThisFrame)
+                        {
+                            RaycastFromWallNotes();
+                        }
+                       else if (!mouse.leftButton.IsPressed())
+                        {
+                            
+                            if (saveNotesBehave != null)
+                            {
+                                if (!saveNotesBehave.IsinPlaced)
+                                {
+                                    saveNotesBehave.state = NotesBehave.NoteState.Idle;
+                                }
+                            }
+                            
+                            if (lean!=null)
+                            {
+                                saveNotesBehave.LeanCatchRay = false;
+                                lean.CanDrag = false;
+                                lean = null;
+                            }
+                        }
+                    } 
                     UnblockedMouse();
                 }
             }
@@ -68,6 +102,9 @@ public class PlayerCamera : MonoBehaviour
 		#endif
         try{myCamera = Camera.main;}
         catch{myCamera = GetComponent<Camera>();}
+
+        dephcamera = mainCamera.depth;
+        fieldofview = mainCamera.fieldOfView;
 
 		Active = true;  
     }
@@ -105,31 +142,76 @@ public class PlayerCamera : MonoBehaviour
         //Check Click to interact
         if(mouse.leftButton.wasPressedThisFrame)
         {
-            GetViewInfo();
+            if (mainPlayer.stateInteractions == MainPlayer.playerInteractions.NoInteracting)
+            {
+                GetViewInfo();
+            }
         }
         
     }
 
     void GetViewInfo()
+    {   
+            RaycastHit hit;
+             Vector2 coordinate = new Vector2 (Screen.width/2,Screen.height/2);
+             Ray myRay = myCamera.ScreenPointToRay(coordinate);
+             if(Physics.Raycast (myRay, out hit, distanceHit))
+             {
+                 IUsable usable = hit.transform.GetComponent<IUsable>();
+                 if(usable !=null)
+                 {
+                     usable.UseClick();
+                 }
+             }
+    }
+
+    void RaycastFromWallNotes()
     {
         RaycastHit hit;
-        Vector2 coordinate = new Vector2 (Screen.width/2,Screen.height/2);
-        Ray myRay = myCamera.ScreenPointToRay(coordinate);
-        if(Physics.Raycast (myRay, out hit, distanceHit))
+        Ray myRay = myCamera.ScreenPointToRay(mouse.position.ReadValue());
+        if(Physics.Raycast (myRay, out hit, 100))
         {
-           
             IUsable usable = hit.transform.GetComponent<IUsable>();
             if(usable !=null)
             {
                 usable.UseClick();
             }
 
-            WallNotes wallNotes = hit.transform.GetComponent<WallNotes>();
-            if (wallNotes != null)
+           NotesBehave notesBehave = hit.transform.GetComponent<NotesBehave>();
+           if (notesBehave != null)
+           {
+               if (!hit.transform.GetComponent<NotesBehave>())
+               {
+                   saveNotesBehave = notesBehave;
+               }
+               saveNotesBehave = hit.transform.GetComponent<NotesBehave>();
+               
+               if (hit.transform.GetComponent<LeanDragTranslate>())
+                    {
+                        saveNotesBehave.LeanCatchRay = true;
+                        saveNotesBehave.state = NotesBehave.NoteState.Dragging;
+                        lean = hit.transform.GetComponent<LeanDragTranslate>();
+                        lean.CanDrag = true;
+                    }
+                    else if(!hit.transform.GetComponent<LeanDragTranslate>())
+                    {
+                        if(lean!=null)
+                        lean.CanDrag = false;
+                    }
+                }
+            
+          
+            NoteTarget noteTarget = hit.transform.GetComponent<NoteTarget>();
+            if (noteTarget != null)
             {
-                wallNotes.enabled = true;
+                if (saveNotesBehave != null)
+                {
+                    if(saveNotesBehave.IsinPlaced && noteTarget.HasNote)
+                    {
+                        saveNotesBehave.IsinPlaced = false;
+                    }
+                }
             }
-
         }
     }
    private void BlockMouse()
@@ -143,7 +225,17 @@ public class PlayerCamera : MonoBehaviour
          Cursor.lockState = CursorLockMode.None;
          Cursor.visible = true;
     }
+
+    public void ReturnCamera()
+    {
+        mainCamera.transform.parent = placeCameraContainer.transform.parent;
+        mainCamera.transform.position = placeCameraContainer.transform.position;
+        mainCamera.depth = dephcamera;
+        mainCamera.fieldOfView = fieldofview;
+
+
+    }
     
-}
+    }
 }
 

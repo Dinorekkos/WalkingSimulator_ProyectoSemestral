@@ -5,9 +5,12 @@ using Lean.Touch;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using cod.dino;
+using UnityEngine.Events;
 
-public class NotesBehave : MonoBehaviour
+
+public class NotesBehave : MonoBehaviour,IUsable
 {
+    public UnityEvent onUse;
     public enum NoteState
     {
         Idle, Dragging, Placed
@@ -23,6 +26,13 @@ public class NotesBehave : MonoBehaviour
         set { isInPlaced = value; }
     }
 
+    private bool leanCatchRay;
+    public bool LeanCatchRay
+    {
+        get { return leanCatchRay; }
+        set { leanCatchRay = value; }
+    }
+
     [Header("Visuals")] 
     [SerializeField] private GameObject particle;
     [Header("ID")]
@@ -32,46 +42,31 @@ public class NotesBehave : MonoBehaviour
     [SerializeField] private Letter memorie;
     [SerializeField] private Letter thought;
     
-    [Header("AudioManager")]
-    [SerializeField] private AudioManagerPuzzle audioManagerPuzzle;
-
-    [SerializeField] private string clipName;
-    
     private bool canInteract;
 
     public bool CanInteract
     {
         get { return canInteract; }
+        set { canInteract = value; }
     }
-    
     Vector3 placedPos;
-    [SerializeField] private Camera cam;
     private RaycastHit hit;
     private Ray ray;
     private Mouse mouse;
-    private LeanDragTranslate lean;
-    private Vector3 inicialPos; 
     private NoteTarget noteTarget;
+    private Vector3 inicialPos;
     private Collider collider;
-    
     private MeshRenderer mesh;
     private void Start()
     {
-        #if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_EDITOR || UNITY_STANDALONE_LINUX
-        mouse = Mouse.current;
-        #endif
         mesh = this.GetComponent<MeshRenderer>();
         collider = this.GetComponent<Collider>();
-        lean = gameObject.GetComponent<LeanDragTranslate>();
-        //cam = lean.Camera;
-
         particle.SetActive(false);
         canInteract = false;
         inicialPos = transform.position;
         state = NoteState.Idle;
         mesh.enabled = false;
         collider.enabled = false;
-        audioManagerPuzzle = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManagerPuzzle>();
     }
 
     private void Update()
@@ -93,60 +88,30 @@ public class NotesBehave : MonoBehaviour
             {
                 CheckID();
             }
-            if (mouse.leftButton.wasPressedThisFrame)
-            {
-                ray = cam.ScreenPointToRay(mouse.position.ReadValue());
-                if (Physics.Raycast(ray.origin, ray.direction, out hit))
-                {
-                    if (hit.transform.GetComponent<NoteTarget>())
-                    {
-                        audioManagerPuzzle.Play(clipName);
-                        if (this.IsinPlaced && noteTarget.HasNote)
-                        {
-                            IsinPlaced= false;
-                        }
-                    }
-                    if (hit.transform.GetComponent<LeanDragTranslate>())
-                    {
-                        
-                        audioManagerPuzzle.Play(clipName);
-                        state = NoteState.Dragging;
-                        lean = hit.transform.GetComponent<LeanDragTranslate>();
-                        lean.CanDrag = true;
-                    }
-                    else if (!hit.transform.GetComponent<LeanDragTranslate>())
-                    {
-                        //print( " NO da con comp leandrag");
-                        if(lean !=null)
-                        lean.CanDrag = false;
-                    }
-                }
-            }
-            else if (!mouse.leftButton.IsPressed())
-            {
-                if (!IsinPlaced)
-                {
-                    state = NoteState.Idle;
-                }
-                if (lean)
-                {
-                    lean.CanDrag = false;
-                    lean = null;
-                }
-            }
         }
     }
+
+    public void UseClick()
+    {
+        if(onUse !=null)
+        {
+            onUse.Invoke();
+            
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("CubeTarget"))
         {
-            //print("Detect Collider Place");
+            
             noteTarget = other.GetComponent<NoteTarget>();
+            noteTarget.HasNote = true;
             state = NoteState.Placed;
             IsinPlaced = true;
-            noteTarget.HasNote = true;
             transform.position = other.transform.position;
-            lean.CanDrag = false;
+            LeanDragTranslate leanDrag = gameObject.GetComponent<LeanDragTranslate>();
+            leanDrag.CanDrag = false;
         }
     }
     private void OnTriggerExit(Collider other)

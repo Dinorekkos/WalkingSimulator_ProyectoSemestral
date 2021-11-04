@@ -78,6 +78,7 @@
      <Compile Include="Assets\Packages\ARPG Effects\Scripts\ARPGFXLightFlicker.cs" />
      <Compile Include="Assets\_Dino\Code\code_player\code_player_movement\Player_AnimationController.cs" />
      <Compile Include="Assets\_Dino\Code\code_player\code_player_movement\PlayerMovement.cs" />
+     <Compile Include="Assets\_Dino\Code\code_interactables\SoundNotes.cs" />
      <Compile Include="Assets\_Dino\Code\code_gamelogic\gamelogic_audio\GlobalSounds.cs" />
      <Compile Include="Assets\_Dino\Code\code_gamelogic\gamelogic_Scenes\SceneTrasition.cs" />
      <Compile Include="Assets\Packages\ARPG Effects\Demo\Scripts\ARPGSceneSelect.cs" />

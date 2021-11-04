@@ -19,19 +19,14 @@ namespace cod.dino
             OnPause
         }
         public playerInteractions stateInteractions;
+        
 
+        [Header("UI Pointer")] 
+        [SerializeField] private Image pointer;
+        
+        private Mouse mouse;
         private PlayerCamera playercamera;
         private PlayerMovement movement;
-
-        [Header("UI Pointer")] [SerializeField]
-        private Image pointer;
-
-        [Header("Wall Notes")] [SerializeField]
-        
-        //[SerializeField] private GameObject[] notesGO;
-        private LeanDragTranslate lean;
-        private Mouse mouse;
-        
         private void Start()
         {
             Prepare();
@@ -69,13 +64,10 @@ namespace cod.dino
         }
         public void PlayerIsInteractingWithWall()
         {
-            
             MakePlayerStatic();
             if (mouse.rightButton.wasPressedThisFrame)
-            {   
-                
+            {
                 stateInteractions = playerInteractions.NoInteracting;
-                
             }
         }
         public void PlayerIsInteractingWithText()
