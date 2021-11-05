@@ -88,10 +88,10 @@
      <Compile Include="Assets\_Dino\Code\code_interactables\code_colectables\MyLetters.cs" />
      <Compile Include="Assets\_Dino\Code\code_data\BoolVariables.cs" />
      <Compile Include="Assets\Packages\ARPG Effects\Demo\Scripts\ARPGFXCycler.cs" />
+     <Compile Include="Assets\_Dino\Code\code_interactables\ShakeEffect.cs" />
      <Compile Include="Assets\_Dino\Code\code_player\MainPlayer.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\code_wallNotes\WallCheckIds.cs" />
      <Compile Include="Assets\Packages\DragAndDrop\DragDrop\Scripts\ItemSlot.cs" />
-     <Compile Include="Assets\_Dino\Code\code_interactables\ShakeEffect.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Packages\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
