@@ -130,14 +130,18 @@ public class NotesBehave : MonoBehaviour,IUsable
         {
             noteTarget.IsValid = true;
         }
-        else if(noteTarget.TargetId != noteID)
+        if(noteTarget.TargetId != noteID)
         {
             noteTarget.IsValid = false;
         }
-        else if (noteTarget.TargetId == null)
+        if (noteTarget.TargetId == null)
         {
             noteTarget.IsValid = false;
             
+        }
+        if (!noteTarget.HasNote)
+        {
+            noteTarget.IsValid = false;
         }
         
     }

@@ -10,7 +10,7 @@ public class NoteTarget : MonoBehaviour,IUsable
     [SerializeField] private bool isValid;
 
     public UnityEvent onUse;
-    
+    private NotesBehave note;
     private bool hasNote;
     private MeshRenderer mesh;
     private Collider collider;
@@ -62,5 +62,20 @@ public class NoteTarget : MonoBehaviour,IUsable
             collider.enabled = true;
             particle.SetActive(true);
         }
+    }
+
+    public void ReturnNoteAttached()
+    {
+        if (note != null)
+        {
+             note.state= NotesBehave.NoteState.Idle;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        note = other.GetComponent<NotesBehave>();
+        if (note == null)
+            note = null;
     }
 }

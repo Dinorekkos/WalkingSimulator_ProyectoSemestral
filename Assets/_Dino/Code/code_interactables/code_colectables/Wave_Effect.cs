@@ -1,24 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class Wave_Effect : MonoBehaviour
 {
-    public float timePeriod = 2;
-    public float height = 30f;
-    private float timeSinceStart;
-    private Vector3 pivot;
-    private void Start()
-    {
-        pivot = transform.position;
-        height /= 2;
-        timeSinceStart = (3 * timePeriod) / 4;
-    }
-    void Update()
-    {
-        Vector3 nextPos = transform.position;
-        nextPos.y = pivot.y + height + height * Mathf.Sin(((Mathf.PI * 2) / timePeriod) * timeSinceStart);
-        timeSinceStart += Time.deltaTime;
-        transform.position = nextPos;
-    }
- }
+  [SerializeField] private Transform transform;
+  [SerializeField] private float duration;
+  [SerializeField] private int vibrato;
+  [SerializeField] private float move;
+
+  private void Start()
+  {
+    DOParhEffect();
+  }
+  
+  void DOParhEffect()
+  {
+      var tweener = transform.DOShakePosition(duration,move,vibrato).SetLoops(-1);
+      if(tweener.IsPlaying()) return;
+  }
+}

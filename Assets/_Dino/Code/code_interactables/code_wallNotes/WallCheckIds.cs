@@ -20,7 +20,8 @@ public class WallCheckIds : MonoBehaviour
    [Header("Audio")]
    [SerializeField] private AudioManagerPuzzle audioManagerPuzzle;
    [SerializeField] private string clipName;
-   
+
+   [SerializeField] private ShakeEffect shakeEffect;
    
    private Mouse mouse;
    private RaycastHit hit;
@@ -37,10 +38,10 @@ public class WallCheckIds : MonoBehaviour
             allValid = false;
          }
       }
-
       if (!allValid)
       {
-         audioManagerPuzzle.Play("DoorLock");
+          shakeEffect.DOShake();
+          audioManagerPuzzle.Play("DoorLock");
       }
    }
 
@@ -48,6 +49,7 @@ public class WallCheckIds : MonoBehaviour
    {
       if (allValid)
       {
+         shakeEffect.DORotate();
          onUse.Invoke();
          audioManagerPuzzle.Play(clipName);
       }

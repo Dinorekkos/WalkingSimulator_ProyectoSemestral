@@ -91,6 +91,7 @@
      <Compile Include="Assets\_Dino\Code\code_player\MainPlayer.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\code_wallNotes\WallCheckIds.cs" />
      <Compile Include="Assets\Packages\DragAndDrop\DragDrop\Scripts\ItemSlot.cs" />
+     <Compile Include="Assets\_Dino\Code\code_interactables\ShakeEffect.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Packages\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -340,6 +341,9 @@
  </Reference>
  <Reference Include="UnityEditor.UnityConnectModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>E:/Documentos/Tareas/3 Semestre/ProyectoSmeestral/Unity/WalkingSimulator/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -730,6 +734,10 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{22748cf0-06cd-7661-831d-26c08bb7c74e}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="LeanCommonPlus.csproj">
       <Project>{720dc70b-6876-8086-a4db-2eec24e7cc3b}</Project>
       <Name>LeanCommonPlus</Name>

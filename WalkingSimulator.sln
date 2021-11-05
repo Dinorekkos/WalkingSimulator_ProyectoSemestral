@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeanCommonPlus", "LeanCommo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeanTouch", "LeanTouch.csproj", "{b01776cd-2be9-6b48-e6b7-b7c9789c8322}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{22748cf0-06cd-7661-831d-26c08bb7c74e}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{b01776cd-2be9-6b48-e6b7-b7c9789c8322}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{b01776cd-2be9-6b48-e6b7-b7c9789c8322}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{b01776cd-2be9-6b48-e6b7-b7c9789c8322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22748cf0-06cd-7661-831d-26c08bb7c74e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22748cf0-06cd-7661-831d-26c08bb7c74e}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22748cf0-06cd-7661-831d-26c08bb7c74e}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22748cf0-06cd-7661-831d-26c08bb7c74e}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

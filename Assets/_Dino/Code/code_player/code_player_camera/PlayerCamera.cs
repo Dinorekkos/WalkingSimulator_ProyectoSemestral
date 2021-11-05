@@ -72,7 +72,6 @@ public class PlayerCamera : MonoBehaviour
                         }
                        else if (!mouse.leftButton.IsPressed())
                         {
-                            
                             if (saveNotesBehave != null)
                             {
                                 if (!saveNotesBehave.IsinPlaced)
@@ -199,19 +198,6 @@ public class PlayerCamera : MonoBehaviour
                         lean.CanDrag = false;
                     }
                 }
-            
-          
-            NoteTarget noteTarget = hit.transform.GetComponent<NoteTarget>();
-            if (noteTarget != null)
-            {
-                if (saveNotesBehave != null)
-                {
-                    if(saveNotesBehave.IsinPlaced && noteTarget.HasNote)
-                    {
-                        saveNotesBehave.IsinPlaced = false;
-                    }
-                }
-            }
         }
     }
    private void BlockMouse()
