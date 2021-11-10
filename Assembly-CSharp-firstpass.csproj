@@ -52,15 +52,32 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Plugins\Packages\ARPG Effects\Scripts\ARPGFXRotation.cs" />
+     <Compile Include="Assets\Plugins\Packages\Espejo\MirrorReflectionScript.cs" />
+     <Compile Include="Assets\Plugins\Packages\DragAndDrop\DragDrop\Scripts\DragDrop.cs" />
+     <Compile Include="Assets\Plugins\Packages\ARPG Effects\Demo\Scripts\ARPGFXLoopScript.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+     <Compile Include="Assets\Plugins\Packages\ARPG Effects\Scripts\ARPGFXLightFade.cs" />
+     <Compile Include="Assets\Plugins\Packages\ARPG Effects\Scripts\ARPGFXLightFlicker.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
+     <Compile Include="Assets\Plugins\Packages\ARPG Effects\Demo\Scripts\ARPGSceneSelect.cs" />
+     <Compile Include="Assets\Plugins\Packages\ARPG Effects\Scripts\ARPGFXPortalScript.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleSprite.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
+     <Compile Include="Assets\Plugins\Packages\ARPG Effects\Demo\Scripts\ARPGFXCycler.cs" />
      <Compile Include="Assets\Plugins\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
+     <Compile Include="Assets\Plugins\Packages\DragAndDrop\DragDrop\Scripts\ItemSlot.cs" />
+     <None Include="Assets\Plugins\Packages\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
+     <None Include="Assets\Plugins\Packages\PolygonPrototype\Shaders\Prototype_Object.shader" />
+     <None Include="Assets\Plugins\Packages\Espejo\MirrorReflection.shader" />
+     <None Include="Assets\Plugins\Packages\ARPG Effects\Readme.txt" />
+     <None Include="Assets\Plugins\Packages\PolygonPrototype\Shaders\Prototype_Global.shader" />
+     <None Include="Assets\Plugins\Packages\Lean\READ ME.txt" />
      <None Include="Assets\Plugins\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\Plugins\Packages\PolygonPrototype\Shaders\Prototype_Glass_Object.shader" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.8f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>

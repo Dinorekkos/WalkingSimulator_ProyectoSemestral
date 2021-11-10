@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Lean.Touch;
-using Lean.Touch.Editor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
