@@ -13,8 +13,6 @@ public class PlayerCamera : MonoBehaviour
     {
         Static, Moving
     }
-    
-    
     [Header("Player")]
     [SerializeField] private Transform player;
     [SerializeField] private MainPlayer mainPlayer;

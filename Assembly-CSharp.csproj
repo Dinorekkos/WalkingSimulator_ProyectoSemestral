@@ -58,6 +58,7 @@
      <Compile Include="Assets\_Dino\Code\code_gamelogic\gamelogic_audio\DistanceAudio.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\code_colectables\colectables_txt\TextIterator.cs" />
      <Compile Include="Assets\_Dino\Code\code_gamelogic\gamelogic_audio\SoundsPuzzle.cs" />
+     <Compile Include="Assets\_Dino\Code\code_interfaces\MouseS.cs" />
      <Compile Include="Assets\_Dino\Code\code_interfaces\IUsable.cs" />
      <Compile Include="Assets\_Dino\Code\code_gamelogic\gamelogic_audio\AudioMixerManager.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\code_wallNotes\NotesBehave.cs" />
@@ -69,6 +70,7 @@
      <Compile Include="Assets\_Dino\Code\code_interactables\Door.cs" />
      <Compile Include="Assets\_Dino\Code\code_gamelogic\PauseController.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\code_wallNotes\NoteTarget.cs" />
+     <Compile Include="Assets\_Dino\Code\code_interfaces\ButtonsUI.cs" />
      <Compile Include="Assets\_Dino\Code\code_interactables\code_colectables\NoteColectable.cs" />
      <Compile Include="Assets\_Dino\Code\code_player\code_player_movement\Player_AnimationController.cs" />
      <Compile Include="Assets\_Dino\Code\code_player\code_player_movement\PlayerMovement.cs" />

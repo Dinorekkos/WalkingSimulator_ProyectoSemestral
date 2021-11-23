@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Lean.Touch;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -15,7 +16,7 @@ public class WallCheckIds : MonoBehaviour
 
    [Header("Notes")]
    [SerializeField] private Camera camera;
-   [SerializeField] private NoteTarget[] targetsNotes;
+   [SerializeField] public NoteTarget[] targetsNotes;
 
    [Header("Audio")]
    [SerializeField] private AudioManagerPuzzle audioManagerPuzzle;
@@ -52,6 +53,15 @@ public class WallCheckIds : MonoBehaviour
          shakeEffect.DORotate();
          onUse.Invoke();
          audioManagerPuzzle.Play(clipName);
+      }
+   }
+
+   public void DeactivateNotes()
+   {
+      for (int i = 0; i < targetsNotes.Length; i++)
+      {
+         targetsNotes[i].gameObject.GetComponent<NotesBehave>().enabled = false;
+         targetsNotes[i].gameObject.GetComponent<LeanDragTranslate>().enabled = false;
       }
    }
 

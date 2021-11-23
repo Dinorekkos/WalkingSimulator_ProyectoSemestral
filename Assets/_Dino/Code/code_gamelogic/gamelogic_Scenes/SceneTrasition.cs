@@ -6,7 +6,7 @@ public class SceneTrasition : MonoBehaviour
     [SerializeField] private string sceneToLoad;
     public void LoadScene()
     {
-        SceneManager.LoadSceneAsync(sceneToLoad);
+        SceneManager.LoadScene(sceneToLoad);
     }
     public void Quit()
     {

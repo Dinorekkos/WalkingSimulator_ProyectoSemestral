@@ -10,17 +10,13 @@ namespace cod.dino
         private bool isOnPause;
         private Keyboard keyboard;
         private MainPlayer mainPlayer;
-
         [Header("PauseMenu")] 
         [SerializeField] private GameObject pauseGO;
-
         public bool IsOnPause
         {
             get { return isOnPause; }
             set { isOnPause = value;}
         }
-
-
         void Prepare()
         {
             #if UNITY_STANDALONE_WIN || UNITY_STANDALONE_OSX || UNITY_EDITOR || UNITY_STANDALONE_LINUX
@@ -33,9 +29,7 @@ namespace cod.dino
        void Start()
         {
             Prepare();
-        }
-
-        
+        }  
         void Update()
         {
             CallPause();
