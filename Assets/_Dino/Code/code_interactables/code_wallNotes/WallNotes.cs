@@ -66,21 +66,28 @@ public class WallNotes : MonoBehaviour, IUsable
     {
         if (mouse.rightButton.wasPressedThisFrame)
         {
-            if (main.stateInteractions == MainPlayer.playerInteractions.NoInteracting)
+            try
             {
-                interact = false;
-                state = wallState.onWaiting;
-                
-                try
-                {
-                    playerCameraScript.ReturnCamera();
-                }
-                catch
-                {
-                    print("No se pudo activar main camera");
-                }
+                if (main.stateInteractions == MainPlayer.playerInteractions.NoInteracting)
+                        {
+                            interact = false;
+                            state = wallState.onWaiting;
+                            
+                            try
+                            {
+                                playerCameraScript.ReturnCamera();
+                            }
+                            catch
+                            {
+                                print("No se pudo activar main camera");
+                            }
+                        }
+            }
+            catch 
+            {
                 
             }
+            
         }
         if (state == wallState.onUse)
         {

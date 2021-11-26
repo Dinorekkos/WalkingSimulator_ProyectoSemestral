@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Dino/Scenes/Scene2.unity
     guid: fd546336fbef2504f9758ce05c54ab38
+  - enabled: 1
+    path: Assets/_Dino/Scenes/Scene3.unity
+    guid: 93f83b172906b874a973f29c2be9b36c
   m_configObjects: {}

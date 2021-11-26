@@ -60,8 +60,8 @@ public class WallCheckIds : MonoBehaviour
    {
       for (int i = 0; i < targetsNotes.Length; i++)
       {
-         targetsNotes[i].gameObject.GetComponent<NotesBehave>().enabled = false;
-         targetsNotes[i].gameObject.GetComponent<LeanDragTranslate>().enabled = false;
+         //targetsNotes[i].gameObject.GetComponent<NotesBehave>().enabled = false;
+         //targetsNotes[i].gameObject.GetComponent<LeanDragTranslate>().enabled = false;
       }
    }
 
